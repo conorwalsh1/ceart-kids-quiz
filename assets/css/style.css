@@ -17,11 +17,11 @@ body {
 }
 
 .name {
-    margin: -100px 10px 10px 10px;
+    margin: -100px 10px 10px 25px;
 }
 
 .score {
-    margin: -55px 10px 10px 10px;
+    margin: -55px 25px 10px 10px;
     text-align: right;
 }
 
@@ -31,7 +31,7 @@ body {
     background-color: #17812e;
     box-sizing: border-box;
     width: 90%;
-    height: 75vh;
+    height: 65vh;
     max-height: 550px;
     max-width: 930px;
     margin-left: auto;
@@ -50,28 +50,57 @@ body {
 
 .quiz-question {
     margin: 5px auto;
+    height: 50%;
     width: 90%;
     font-size: 30px;
     color: white;
     float: left;
 }
 
+.quiz-answer {
+    line-height: 70vh;
+}
+
 .answer-a, .answer-b, .answer-c {
-    width: 280px;
+    width: 31%;
     height: 60px;
     font-family: "Open Sans", sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
     font-size: 22px;
     color: black;
-    margin-top: 37vh;
+    margin-top: 20px;
     margin-right: 5px;
     margin-bottom: 20px;
+    text-align: left;
 }
 
 .answer-a {
     margin-left: 22px;
 }
 
-
+@media (max-width: 900px) {
+    .name {
+        margin: -70px 10px 10px 10px;
+        text-align: center;
+        line-height: 180px;
+    }
     
+    .score {
+        margin: -50px 10px 10px 10px;
+        text-align: center;
+    }
+
+    .quiz-answer {
+        height: 190vh;
+    }
+
+    .answer-a, .answer-b, .answer-c  {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        float: none;
+    }
+
+}
