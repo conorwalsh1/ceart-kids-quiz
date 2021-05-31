@@ -1,3 +1,28 @@
+
+Created logo using https://logomakr.com/
+
+Google fonts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 Welcome conorwalsh1,
