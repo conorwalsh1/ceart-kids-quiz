@@ -2,8 +2,33 @@ body {
     background-color: white;
 }
 
-.heading {
-    font-size: 20px;
-    text-align: center;
-    margin: 10px 10px 10px 10px;
+/* Heading */
+
+.logo {
+    float: left;
+    margin: 0px 10px 10px 10px;
+    line-height: 40px;
+}
+
+.name, .score {
+    font-size: 45px;
+    display: inline-block;
+}
+
+.name {
+    line-height: 30px;
+    margin-right: 30px;
+    margin-left: 480px;
+    
+}
+
+.score {
+    line-height: 30px;
+    margin-right: 30px;
+    margin-left: 80px;
+}
+
+.quiz-area {
+    border: rgb(rgba(32, 145, 98, 0.877);
+    
 }
