@@ -31,7 +31,7 @@ body {
     background-color: #17812e;
     box-sizing: border-box;
     width: 90%;
-    height: 65vh;
+    height: 55vh;
     max-height: 550px;
     max-width: 930px;
     margin-left: auto;
@@ -57,22 +57,21 @@ body {
     float: left;
 }
 
-.quiz-answer {
-    line-height: 70vh;
-}
+/* Quiz Answer */
 
 .answer-a, .answer-b, .answer-c {
-    width: 31%;
-    height: 60px;
+    width: 31.75%;
+    height: 80px;
     font-family: "Open Sans", sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
     font-size: 22px;
-    color: black;
-    margin-top: 20px;
+    color: white;
+    margin-top: 60px;
     margin-right: 5px;
     margin-bottom: 20px;
     text-align: left;
+    background-color: rgb(255, 123, 0);
 }
 
 .answer-a {
@@ -91,16 +90,13 @@ body {
         text-align: center;
     }
 
-    .quiz-answer {
-        height: 190vh;
-    }
-
     .answer-a, .answer-b, .answer-c  {
         display: block;
         margin-left: auto;
         margin-right: auto;
         width: 50%;
         float: none;
+        margin-bottom: 30px;
     }
 
 }
