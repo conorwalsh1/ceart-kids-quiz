@@ -1,5 +1,5 @@
 body {
-    background-color: white;
+    background-color: rgb(240, 240, 240);
     font-family: 'Open Sans', sans-serif;
     color: black;
 }
@@ -28,7 +28,7 @@ body {
 /* Quiz Area */
 
 .quiz-area { 
-    background-color: #17812e;
+    background-color: rgb(50, 83, 50);
     box-sizing: border-box;
     width: 90%;
     height: 55vh;
@@ -62,21 +62,33 @@ body {
 .answer-a, .answer-b, .answer-c {
     width: 31.75%;
     height: 80px;
+    border: 1px solid black;
+    color: black;
     font-family: "Open Sans", sans-serif;
     text-transform: uppercase;
-    letter-spacing: 4px;
+    letter-spacing: 1px;
     font-size: 22px;
-    color: white;
     margin-top: 60px;
     margin-right: 5px;
     margin-bottom: 20px;
     text-align: left;
-    background-color: rgb(255, 123, 0);
+    transition: 0.8s;
 }
 
 .answer-a {
     margin-left: 22px;
 }
+
+.answer-a:hover {
+    background-color: rgb(0, 172, 37);
+}
+
+.answer-b:hover {
+    background-color: white;
+}
+
+.answer-c:hover {
+    background-color: rgb(255, 123, 0);
 
 @media (max-width: 900px) {
     .name {
