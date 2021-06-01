@@ -80,3 +80,29 @@ let questions = [
         answer: 1,
     },
 ]
+
+const SCORE_POINTS = 1
+const MAX_QUESTIONS = 10
+
+startGame = () => {
+    questionCounter = 0
+    scoreText = 0
+    availableQuestions = [...questions]
+    getNewQuestion()
+}
+
+getNewQuestion() = () => {
+    if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
+        localStorage.setItem('mostRecentScore', scoreText)
+
+        return window.location.assign('./end.html')
+    }
+
+    questionCounter++
+    progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`
+
+    const questionsIndex = Math.floor(Math.random() * availableQuestions.length)
+    currentQuestion = availableQuestions[questionsIndex]
+    question.innerText = currentQuestion.question
+
+}
