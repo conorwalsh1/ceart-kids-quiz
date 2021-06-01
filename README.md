@@ -3,6 +3,8 @@ Created logo using https://logomakr.com/
 
 Google fonts
 
+https://www.youtube.com/watch?v=MLfAW55_4cY - followed first half of video to apply hover overlays to buttons
+
 
 
 

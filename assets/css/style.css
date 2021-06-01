@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
+
 body {
     background-color: rgb(240, 240, 240);
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Coming Soon', sans-serif;
+    font-weight: 300;
     color: black;
 }
 
@@ -28,8 +31,9 @@ body {
 /* Quiz Area */
 
 .quiz-area { 
-    background-color: rgb(50, 83, 50);
+    background-color: rgb(26, 26, 26);
     box-sizing: border-box;
+    border: 8px solid rgb(117, 86, 45);
     width: 90%;
     height: 55vh;
     max-height: 550px;
@@ -88,6 +92,9 @@ body {
 
 .answer-c:hover {
     background-color: rgb(255, 123, 0);
+}
+
+@media (max-width: 2560) {
 }
 
 @media (max-width: 972px) {
