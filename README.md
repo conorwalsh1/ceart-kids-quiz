@@ -5,6 +5,8 @@ Google fonts
 
 https://www.youtube.com/watch?v=MLfAW55_4cY - followed first half of video to apply hover overlays to buttons
 
+https://www.w3schools.com/cssref/pr_border-style.asp to remove border
+
 
 
 
