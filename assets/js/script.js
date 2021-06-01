@@ -1,9 +1,9 @@
 const playButton = document.getElementByID('enter-quiz')
 const quizAreaElement = document.getElementById('quiz-area')
 const questionElement = document.getElementById('question')
-const
+const answerButtonsElement = document.getElementById('answer-buttons')
 
-const shuffledQuestions, currentQuestionIndex
+let shuffledQuestions, currentQuestionIndex
 
 playButton.addEventListener('click', startQuiz)
 
@@ -19,7 +19,7 @@ function setNextQuestion () {
 }
 
 function showQuestion (question) {
-
+    questionElement.innerText = question.question
 }
 
 function selectAnswer () {
@@ -33,73 +33,83 @@ function incrementScore () {
 const questions = [
     {
         question: '1. If you have "dhá úll", how many apples do you have?',
-        answerText: '1',
-        answerText: '2',
-        answerText: '3',
-        answer: 2,
+        answers: [
+        { text: '1', correct = false },
+        { text: '2', correct = true },
+        { text: '3', correct = false },
+        ]
     },
     {
-        question: '2. If a house is the colour "dearg", what colour is it?',
-        answerText: 'Black',
-        answerText: 'Red',
-        answerText: 'Blue',
-        answer: 2,
+        question: '2. If a house is painted the colour "dearg", what colour is it?',
+        answers: [
+            { text: 'Black', correct = false },
+            { text: 'Red', correct = true },
+            { text: 'Blue', correct = false },
+            ]
     },
     {
         question: '3. "Bó" is the name of what farm animal?',
-        answerText: 'Cow',
-        answerText: 'Pig',
-        answerText: 'Sheep',
-        answer: 1,
+        answers: [
+            { text: 'Cow', correct = true },
+            { text: 'Pig', correct = false },
+            { text: 'Sheep', correct = false },
+            ]
     },
     {
         question: '4. "Uisce" is the name for what kind of drink?',
-        answerText: 'Milk',
-        answerText: 'Orange Juice',
-        answerText: 'Water',
-        answer: 3,
+        answers: [
+            { text: 'Milk', correct = false },
+            { text: 'Orange Juice', correct = false },
+            { text: 'Water', correct = true },
+            ]
     },
     {
         question: '5. If I go to the "siopa", where am I going?',
-        answerText: 'Cinema',
-        answerText: 'Shop',
-        answerText: 'Library',
-        answer: 2,
+        answers: [
+            { text: 'Cinema', correct = false },
+            { text: 'Shop', correct = true },
+            { text: 'Library', correct = false },
+            ]
     },
     {
         question: '6. If Oisín said his hair is the colour "fionn", what colour is his hair?',
-        answerText: 'Red',
-        answerText: 'Black',
-        answerText: 'Blonde',
-        answer: 3,
+        answers: [
+            { text: 'Black', correct = false },
+            { text: 'Blonde', correct = true },
+            { text: 'Brown', correct = false },
+            ]
     },
     {
         question: '7. If the sky is the colour "gorm", what colour is the sky?',
-        answerText: 'Blue',
-        answerText: 'Yellow',
-        answerText: 'Grey',
-        answer: 1,
+        answers: [
+            { text: 'Blue', correct = true },
+            { text: 'Yellow', correct = false },
+            { text: 'Grey', correct = false },
+            ]
     },
     {
         question: '8. "Corcaigh" is the name of which Irish county?',
-        answerText: 'Dublin',
-        answerText: 'Cork',
-        answerText: 'Limerick',
-        answer: 2,
+        answers: [
+            { text: 'Dublin', correct = false },
+            { text: 'Cork', correct = true },
+            { text: 'Limerick', correct = false },
+            ]
     },
     {
         question: '9. Who is the "muinteoir" in the classroom?',
-        answerText: 'Pupil',
-        answerText: 'Teacher',
-        answerText: 'Principal',
-        answer: 2,
+        answers: [
+            { text: 'Pupil', correct = false },
+            { text: 'Teacher', correct = true },
+            { text: 'Principal', correct = false },
+            ]
     },
     {
         question: '10. What is the Irish word for "bed"?',
-        answerText: 'Leaba',
-        answerText: 'Leanabh',
-        answerText: 'Seomra',
-        answer: 1,
+        answers: [
+            { text: 'Leaba', correct = false },
+            { text: 'Leanach', correct = true },
+            { text: 'Leabhar', correct = false },
+            ]
     },
 ]
 
