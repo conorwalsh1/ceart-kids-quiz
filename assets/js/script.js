@@ -1,14 +1,26 @@
-const question = document.querySelector('#question')
-const answerText = Array.from(document.querySelector('.answer-text'))
-const scoreText = document.querySelector('.score-number')
+const playButton = document.getElementByID('enter-quiz')
+const questionElement = document.getElementById('question')
 
-let currentQuestion = {}
-let acceptingAnswers = true
-let score = 0
-let questionCounter= 0
-let availableQuestions = []
+playButton.addEventListener('click', startQuiz)
 
-let questions = [
+function startQuiz() {
+    console.log('Started')
+    setNextQuestion()
+}
+
+function setNextQuestion () {
+
+}
+
+function selectAnswer () {
+
+}
+
+function incrementScore () {
+    
+}
+
+const questions = [
     {
         question: '1. If you have "dhá úll", how many apples do you have?',
         answerText: '1',
@@ -81,57 +93,4 @@ let questions = [
     },
 ]
 
-const SCORE_POINTS = 1
-const MAX_QUESTIONS = 10
 
-startGame = () => {
-    questionCounter = 0
-    scoreText = 0
-    availableQuestions = [...questions]
-    getNewQuestion()
-}
-
-getNewQuestion() = () => {
-    if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
-        localStorage.setItem('mostRecentScore', scoreText)
-
-        return window.location.assign('./end.html')
-    }
-
-    questionCounter++
-    progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`
-
-    const questionsIndex = Math.floor(Math.random() * availableQuestions.length)
-    currentQuestion = availableQuestions[questionsIndex]
-    question.innerText = currentQuestion.question
-
-    answers.forEach(answerText => {
-        const number = answerText.dataset['number']
-        answerText.innerText = currentQuestion['answerText' + number]
-    });
-
-    availableQuestions.splice(questionsIndex, 1)
-
-    acceptingAnswers = true
-
-}
-
-answers.forEach(answerText => {
-    answerText.addEventListener('click', e => {
-        if(!acceptingAnswers) return
-
-        acceptingAnswers = false
-
-        const selectedAnswerText = e.target
-        const selectedAnswer = selectedAnswerText.dataset['number']
-
-        let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 
-        'incorrect'
-
-        if(classToApply === 'correct') {
-            incrementScore(SCORE_POINTS)
-        }
-
-        selectedAnswerText.parentElement.classList.add(classToApply)
-    })
-});
