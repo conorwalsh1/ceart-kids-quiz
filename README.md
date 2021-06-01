@@ -7,6 +7,10 @@ https://www.youtube.com/watch?v=MLfAW55_4cY - followed first half of video to ap
 
 https://www.w3schools.com/cssref/pr_border-style.asp to remove border
 
+script.js:25 Uncaught TypeError: Cannot read property 'question' of undefined
+    at showQuestion (script.js:25)
+    at setNextQuestion (script.js:21)
+    at HTMLButtonElement.startQuiz (script.js:15)
 
 
 
