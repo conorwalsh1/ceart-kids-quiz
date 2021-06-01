@@ -37,17 +37,10 @@ body {
   margin-right: auto;
 }
 
-.name, .score {
-    font-size: 35px;
-}
-
-.name {
-    margin: -100px 10px 10px 25px;
-}
-
 .score {
-    margin: -55px 25px 10px 10px;
-    text-align: right;
+    font-size: 40px;
+    margin: -75px 25px 10px 10px;
+    text-align: left;
 }
 
 /* Quiz Area */
@@ -120,14 +113,9 @@ body {
 }
 
 @media (max-width: 1020px) {
-    .name {
-        margin: -70px 10px 10px 10px;
-        text-align: center;
-        line-height: 180px;
-    }
     
     .score {
-        margin: -50px 10px 10px 10px;
+        margin: 0px 10px 10px 10px;
         text-align: center;
     }
 
@@ -147,8 +135,9 @@ body {
         width: 250px;
     }
 
-    .name, .score {
+    .score {
         font-size: 25px;
+        margin-top: 20px;
     }
 
     .quiz-question {
