@@ -1,14 +1,24 @@
 const playButton = document.getElementByID('enter-quiz')
+const quizAreaElement = document.getElementById('quiz-area')
 const questionElement = document.getElementById('question')
+const
+
+const shuffledQuestions, currentQuestionIndex
 
 playButton.addEventListener('click', startQuiz)
 
 function startQuiz() {
     console.log('Started')
+    shuffledQuestions = questions.sort(() = Math.random() - .5)
+    currentQuestionIndex = 0
     setNextQuestion()
 }
 
 function setNextQuestion () {
+    showQuestion(shuffledQuestions[currentQuestionIndex])
+}
+
+function showQuestion (question) {
 
 }
 

@@ -47,7 +47,7 @@ body {
 
 /* Quiz Area */
 
-.quiz-area { 
+#quiz-area { 
     background-color: rgb(26, 26, 26);
     box-sizing: border-box;
     border: 8px solid rgb(117, 86, 45);
