@@ -13,12 +13,18 @@
         <p class="score">Score: <span id="score-number">0/10</span></p>
     </header>
 
-    <div id="quiz-area">
-        <div id="question">Question</div>
-        <div id="answer-buttons">
-            <button class="answer-1">A.</button>
-            <button class="answer-2">B.</button>
-            <button class="answer-3">C.</button>
+    <div class="quiz-area">
+        <div id="question-container" class="hide"></div>
+            <div id="question">Question</div>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+            <div class="controls">
+            <button id="start-btn" class="start-btn btn">Start</button>
+            <button id="next-btn" class="next-btn btn hide">Next</button>
         </div>
     </div>
     
