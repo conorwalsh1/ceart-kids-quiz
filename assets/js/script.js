@@ -105,4 +105,33 @@ getNewQuestion() = () => {
     currentQuestion = availableQuestions[questionsIndex]
     question.innerText = currentQuestion.question
 
+    answers.forEach(answerText => {
+        const number = answerText.dataset['number']
+        answerText.innerText = currentQuestion['answerText' + number]
+    });
+
+    availableQuestions.splice(questionsIndex, 1)
+
+    acceptingAnswers = true
+
 }
+
+answers.forEach(answerText => {
+    answerText.addEventListener('click', e => {
+        if(!acceptingAnswers) return
+
+        acceptingAnswers = false
+
+        const selectedAnswerText = e.target
+        const selectedAnswer = selectedAnswerText.dataset['number']
+
+        let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 
+        'incorrect'
+
+        if(classToApply === 'correct') {
+            incrementScore(SCORE_POINTS)
+        }
+
+        selectedAnswerText.parentElement.classList.add(classToApply)
+    })
+});
