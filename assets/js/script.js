@@ -163,8 +163,8 @@ const questions = [
     {
         question: 'Question. What is the Irish word for "bed"?',
         answers: [
-            { text: 'Leaba', correct: false },
-            { text: 'Leanach', correct: true },
+            { text: 'Leaba', correct: true },
+            { text: 'Leanach', correct: false },
             { text: 'Leabhar', correct: false },
             { text: 'Lean', correct: false }
             ]

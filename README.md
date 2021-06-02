@@ -12,6 +12,8 @@ script.js:25 Uncaught TypeError: Cannot read property 'question' of undefined
     at setNextQuestion (script.js:21)
     at HTMLButtonElement.startQuiz (script.js:15)
 
+https://www.youtube.com/watch?v=riDzcEQbX6k - set up quiz
+
 
 
 
