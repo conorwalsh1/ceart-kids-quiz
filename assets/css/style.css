@@ -64,7 +64,7 @@ body {
     height: 120px;
     padding-top: 75px;
     margin-left: 40px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     font-size: 300px;
 }
 
@@ -130,10 +130,10 @@ body {
 
 @media (max-width: 735px) {
     .quiz-area {
-        height: 100vh;
+        max-height: 100vh;
     }
 
-
+}
 @media (max-width: 410px) {
     .logo {
         width: 250px;
