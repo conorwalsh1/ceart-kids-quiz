@@ -11,23 +11,31 @@
 <body>
     <header>
         <img class="logo" src="assets/images/LogoMakr-2vhs0Z copy.png" alt="logo">
-        <p class="score">Score: <span id="score-number">0</span></p>
+        <p class="score hide">Score: <span id="score-number">0</span></p>
         <p class="quiz-description">Test your Irish language skills!</p>
-        <p class="player-name">Name:</p>
+        <p class="player-name hide">Name:</p>
     </header>
 
     <div class="quiz-area">
-        <div id="question-container" class="hide"></div>
-            <div id="question">Welcome to Ceart, an online quiz platform to test your Irish language skills! You have ten questions to answer and you are only allowed one attempt on each question. Best of luck!</div>
+        <div id="question-container"></div>
+            <div id="welcome-message">Welcome to Ceart, an online quiz platform to test your Irish language skills! You have ten questions to answer and you are only allowed one attempt on each question. Best of luck!</div>
+            <form id="name-form">
+                <div class="first-name">
+                  <label for="first-name">First Name:</label>
+                  <input type="text" id="username-box" name="username">
+                </div>
+            </form>
+            <span id="question" class="hide">Q.</span>
             <div id="answer-buttons" class="btn-grid">
-                <button class="btn hide">Click "Start" below</button>
-                <button class="btn hide">Click "Start" below</button>
-                <button class="btn hide"><i class="fas fa-long-arrow-alt-down"></i></button>
-                <button class="btn hide"><i class="fas fa-long-arrow-alt-down"></i></button>
+                <button class="btn btn--a hide">A.</button>
+                <button class="btn btn--b hide">B.</button>
+                <button class="btn btn--c hide">C.</button>
+                <button class="btn btn--d hide">D.</button>
             </div>
             <div class="controls">
-            <button id="start-btn" class="start-btn btn">Start</button>
+            <button id="start-btn" class="start-btn btn">Start Quiz</button>
             <button id="next-btn" class="next-btn btn hide">Next</button>
+            </div>
         </div>
     </div>
     
