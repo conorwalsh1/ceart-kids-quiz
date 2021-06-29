@@ -1,4 +1,11 @@
+function startQuiz(questions) {
+    console.log('The quiz has started!')
+    document.getElemensByClassName('btn--a', 'btn--b', 'btn--c', 'btn--d', 'next-btn').display;
+    
+}
 
+let startButton = document.getElementById('start-btn');
+startButton.addEventListener('click', startQuiz);
 
 function incrementScore () {
     
