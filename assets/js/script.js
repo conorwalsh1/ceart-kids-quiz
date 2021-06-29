@@ -1,10 +1,16 @@
+
+
+
 function startQuiz(questions) {
     console.log('The quiz has started!')
-    document.getElementsByClassName('btn-grid').style.display = 'block'
+    var btnGrid = document.getElementsByClassName('btn-grid');
+    for (var i = 0; i < btnGrid.length; i += 1){
+    btnGrid[i].style.display = 'block';
+}
     document.getElementById('next-btn').style.display = 'block'
     document.getElementById('start-btn').style.display = 'none'
-
-    
+    document.getElementById('welcome-message').style.display = 'none'
+    document.getElementById('question').style.display = 'block'
 }
 
 let startButton = document.getElementById('start-btn');
@@ -23,7 +29,7 @@ function incrementScore () {
 }
 
 function finalResult () {
-    
+
 }
 
 const questions = [

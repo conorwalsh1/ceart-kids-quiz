@@ -63,7 +63,10 @@ body {
     width: 100%;
     font-size: 25px;
     color: white;
-    float: left;
+}
+
+#question {
+    text-align: left;
 }
 
 .first-name {
@@ -87,17 +90,22 @@ body {
     display: grid;
     grid-template-columns: repeat(2, auto);
     gap: 20px;
-    width: 90%;
-    height: 120px;
+    width: auto;
+    height: 180px;
     padding-top: 30px;
-    margin-left: 40px;
-    font-size: 300px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 1.5rem;
 }
 
 #start-btn, #next-btn {
     font-size: 1.5rem;
     font-weight: bold;
     padding: 10px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 50%;
 }
 
 .controls {

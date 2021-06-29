@@ -1,3 +1,5 @@
+I came across bug cannot set property display of underfined displaying buttons, found info on https://stackoverflow.com/questions/12194435/cannot-set-property-display-of-undefined
+
 
 Created logo using https://logomakr.com/
 
