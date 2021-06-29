@@ -1,5 +1,8 @@
-var score = 0;
+const startButton = document.getElementById('start-btn');
+const questionContainer = document.getElementById('question')
+const answerButtons = document.getElementById('answer-buttons')
 
+var score = 0;
 
 function startQuiz(questions) {
     console.log('The quiz has started!')
@@ -12,20 +15,14 @@ function startQuiz(questions) {
     document.getElementById('welcome-message').style.display = 'none'
     document.getElementById('question').style.display = 'block'
 }
-
-let startButton = document.getElementById('start-btn');
 startButton.addEventListener('click', startQuiz);
 
-for(var i = 0; i < questions.length; i++)
-questions[i].style.display = 'block';
-document.getElementById('question').innerHTML = "questions[i]"
+nextQuestion();
 
 
-
-function nextQuestion () {
-    var randomQuestion = Math.floor(Math.random()*questions.length)
-    var nextButton = document.getElementById('next-btn');
-    nextButton.onclick = nextQuestion()
+ function nextQuestion () {
+     
+}
 
 function correctAnswer () {
 
@@ -130,4 +127,4 @@ var questions = [
             { text: 'Lean', correct: false }
             ]
     },
-]}
+]
