@@ -1,13 +1,28 @@
 function startQuiz(questions) {
     console.log('The quiz has started!')
-    document.getElemensByClassName('btn--a', 'btn--b', 'btn--c', 'btn--d', 'next-btn').display;
+    document.getElementsByClassName('btn-grid').style.display = 'block'
+    document.getElementById('next-btn').style.display = 'block'
+    document.getElementById('start-btn').style.display = 'none'
+
     
 }
 
 let startButton = document.getElementById('start-btn');
 startButton.addEventListener('click', startQuiz);
 
+function nextQuestion () {
+
+}
+
+function correctAnswer () {
+
+}
+
 function incrementScore () {
+    
+}
+
+function finalResult () {
     
 }
 
