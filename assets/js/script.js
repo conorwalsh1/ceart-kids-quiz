@@ -1,4 +1,4 @@
-
+var score = 0;
 
 
 function startQuiz(questions) {
@@ -7,7 +7,7 @@ function startQuiz(questions) {
     for (var i = 0; i < btnGrid.length; i += 1){
     btnGrid[i].style.display = 'block';
 }
-    document.getElementById('next-btn').style.display = 'block'
+    document.getElementById('next-btn', 'question').style.display = 'block'
     document.getElementById('start-btn').style.display = 'none'
     document.getElementById('welcome-message').style.display = 'none'
     document.getElementById('question').style.display = 'block'
@@ -16,9 +16,16 @@ function startQuiz(questions) {
 let startButton = document.getElementById('start-btn');
 startButton.addEventListener('click', startQuiz);
 
-function nextQuestion () {
+for(var i = 0; i < questions.length; i++)
+questions[i].style.display = 'block';
+document.getElementById('question').innerHTML = "questions[i]"
 
-}
+
+
+function nextQuestion () {
+    var randomQuestion = Math.floor(Math.random()*questions.length)
+    var nextButton = document.getElementById('next-btn');
+    nextButton.onclick = nextQuestion()
 
 function correctAnswer () {
 
@@ -32,7 +39,7 @@ function finalResult () {
 
 }
 
-const questions = [
+var questions = [
     {
         question: 'Question. If you have "dhá úll", how many apples do you have?',
         answers: [
@@ -123,6 +130,4 @@ const questions = [
             { text: 'Lean', correct: false }
             ]
     },
-]
-
-
+]}

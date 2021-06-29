@@ -18,7 +18,7 @@ body {
   margin-right: auto;
 }
 
-.score {
+.score, #score-number {
     font-size: 40px;
     margin: -75px 25px 10px 10px;
     text-align: left;
@@ -30,7 +30,7 @@ body {
     text-align: center;
 }
 
-.player-name {
+#player-name {
     font-size: 40px;
     margin: -75px 25px 10px 10px;
     text-align: right;
@@ -66,7 +66,7 @@ body {
 }
 
 #question {
-    text-align: left;
+    text-align: center;
 }
 
 .first-name {
