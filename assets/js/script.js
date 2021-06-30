@@ -1,6 +1,8 @@
 const startButton = document.getElementById('start-btn');
 const questionContainer = document.getElementById('question')
 const answerButtons = document.getElementById('answer-buttons')
+const nextButton = document.getElementById('next-btn')
+
 
 var score = 0;
 
@@ -14,14 +16,18 @@ function startQuiz(questions) {
     document.getElementById('start-btn').style.display = 'none'
     document.getElementById('welcome-message').style.display = 'none'
     document.getElementById('question').style.display = 'block'
+    document.getElementById('question').innerHTML = questions[i];
 }
 startButton.addEventListener('click', startQuiz);
 
 nextQuestion();
 
 
- function nextQuestion () {
-     
+
+
+function nextQuestion() {
+    for (i = 0; i >= questions; i++);
+    console.log('Next question loaded!')
 }
 
 function correctAnswer () {
