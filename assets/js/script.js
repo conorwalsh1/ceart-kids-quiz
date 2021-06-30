@@ -5,6 +5,7 @@ const nextButton = document.getElementById('next-btn')
 
 
 var score = 0;
+let i = 0;
 
 function startQuiz(questions) {
     console.log('The quiz has started!')
@@ -25,10 +26,15 @@ nextQuestion();
 
 
 
-function nextQuestion() {
-    for (i = 0; i >= questions; i++);
+function nextQuestion(questionContainer) {
+    let questionBank = ""
+    for (i = 0; i >= questionSelection; i++);
     console.log('Next question loaded!')
 }
+
+questionContainer.innerHTML += 'Q.' + nextQuestion[i]
+
+nextButton.addEventListener('click', nextQuestion())
 
 function correctAnswer () {
 
@@ -42,7 +48,7 @@ function finalResult () {
 
 }
 
-var questions = [
+var questionSelection = [
     {
         question: 'Question. If you have "dhá úll", how many apples do you have?',
         answers: [
