@@ -7,7 +7,7 @@ const nextButton = document.getElementById('next-btn')
 var score = 0;
 let i = 0;
 
-function startQuiz(questions) {
+function startQuiz() {
     console.log('The quiz has started!')
     var btnGrid = document.getElementsByClassName('btn-grid');
     for (var i = 0; i < btnGrid.length; i += 1){
@@ -17,17 +17,17 @@ function startQuiz(questions) {
     document.getElementById('start-btn').style.display = 'none'
     document.getElementById('welcome-message').style.display = 'none'
     document.getElementById('question').style.display = 'block'
-    document.getElementById('question').innerHTML = questions[i];
+    document.getElementById('question').innerHTML = questionSelection[i];
 }
 startButton.addEventListener('click', startQuiz);
 
-nextQuestion();
+nextQuestion(questionContainer);
 
 
 
 
 function nextQuestion(questionContainer) {
-    let questionBank = ""
+    let questionBank;
     for (i = 0; i >= questionSelection; i++);
     console.log('Next question loaded!')
 }
