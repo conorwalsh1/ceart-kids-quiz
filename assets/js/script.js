@@ -16,13 +16,17 @@ function startQuiz() {
     document.getElementById('start-btn').style.display = 'none'
     document.getElementById('welcome-message').style.display = 'none'
     document.getElementById('question').style.display = 'block'
-    document.getElementById('question').innerHTML = questionSelection;
+    document.getElementById('question').innerHTML = questionSelection1.question;
+    document.getElementById('btn--a').innerHTML = answerSelection1.answer[0];
+    document.getElementById('btn--b').innerHTML = answerSelection1.answer[1];
+    document.getElementById('btn--c').innerHTML = answerSelection1.answer[2];
+    document.getElementById('btn--d').innerHTML = answerSelection1.answer[3];
 }
 startButton.addEventListener('click', startQuiz);
 
-nextQuestion(questionContainer);
+/*nextQuestion();
 
-function nextQuestion(questionContainer) {
+function nextQuestion() {
     let questionBank;
     for (i = 0; i >= questionSelection; i++);
     console.log('Next question loaded') 
@@ -30,7 +34,7 @@ function nextQuestion(questionContainer) {
 
 questionContainer.innerHTML = 'Q.' + nextQuestion[i]
 
-nextButton.addEventListener('click', nextQuestion())
+nextButton.addEventListener('click', nextQuestion()) */
 
 function correctAnswer () {
 
@@ -44,95 +48,101 @@ function finalResult () {
 
 }
 
-var questionSelection = [
+var questionSelection1 = 
     {
-        question: 'Question. If you have "dhá úll", how many apples do you have?',
-        answers: [
-        { text: '1', correct: false },
-        { text: '2', correct: true },
-        { text: '3', correct: false },
-        { text: '4', correct: false }
-        ]
-    },
+        'question' : 'Question. If you have "dhá úll", how many apples do you have?'
+    }
+var answerSelection1 =
     {
-        question: 'Question. If a house is painted the colour "dearg", what colour is it?',
-        answers: [
-            { text: 'Black', correct: false },
-            { text: 'Red', correct: true },
-            { text: 'Blue', correct: false },
-            { text: 'Pink', correct: false }
-            ]
-    },
+        'answer' : ['1', '2', '3', '4']
+    }
+        
+var questionSelection2 = 
     {
-        question: 'Question. "Bó" is the name of what farm animal?',
-        answers: [
-            { text: 'Cow', correct: true },
-            { text: 'Pig', correct: false },
-            { text: 'Sheep', correct: false },
-            { text: 'Goat', correct: false }
-            ]
-    },
+        'question' : 'Question. If a house is painted the colour "dearg", what colour is it?'
+    }
+
+var answerSelection2 =
     {
-        question: 'Question. "Uisce" is the name for what kind of drink?',
-        answers: [
-            { text: 'Milk', correct: false },
-            { text: 'Orange Juice', correct: false },
-            { text: 'Water', correct: true },
-            { text: 'Tea', correct: false }
-            ]
-    },
+        'answer' : ['Black', 'Red', 'Blue', 'Pink']
+    }
+
+var questionSelection3 = 
     {
-        question: 'Question. If I go to the "siopa", where am I going?',
-        answers: [
-            { text: 'Cinema', correct: false },
-            { text: 'Shop', correct: true },
-            { text: 'Library', correct: false },
-            { text: 'Beach', correct: false }
-            ]
-    },
+        'question' : 'Question. "Bó" is the name of what farm animal?'
+    }
+
+var answerSelection3 =
     {
-        question: 'Question. If Oisín said his hair is the colour "dubh", what colour is his hair?',
-        answers: [
-            { text: 'Black', correct: true },
-            { text: 'Blonde', correct: false },
-            { text: 'Brown', correct: false },
-            { text: 'Ginger', correct: false }
-            ]
-    },
+        'answer' : ['Cow', 'Pig', 'Sheep', 'Goat']
+    }
+ 
+var questionSelection4 = 
     {
-        question: 'Question. If the sky is the colour "gorm", what colour is the sky?',
-        answers: [
-            { text: 'Blue', correct: true },
-            { text: 'Yellow', correct: false },
-            { text: 'Grey', correct: false },
-            { text: 'Black', correct: false }
-            ]
-    },
+        'question' : 'Question. "Uisce" is the name for what kind of drink?'
+    }
+
+var answerSelection4 =
     {
-        question: 'Question. "Corcaigh" is the name of which Irish county?',
-        answers: [
-            { text: 'Dublin', correct: false },
-            { text: 'Cork', correct: true },
-            { text: 'Limerick', correct: false },
-            { text: 'Galway', correct: false }
-            ]
-    },
+        'answer' : ['Milk', 'Orange Juice', 'Water', 'Tea']
+    }
+
+var questionSelection5 = 
     {
-        question: 'Question. Who is the "muinteoir" in the classroom?',
-        answers: [
-            { text: 'Pupil', correct: false },
-            { text: 'Teacher', correct: true },
-            { text: 'Principal', correct: false },
-            { text: 'Parent', correct: false }
-            ]
-    },
+        'question' : 'Question. If I go to the "siopa", where am I going?'
+    }
+
+var answerSelection5 =
     {
-        question: 'Question. What is the Irish word for "bed"?',
-        answers: [
-            { text: 'Leaba', correct: true },
-            { text: 'Leanach', correct: false },
-            { text: 'Leabhar', correct: false },
-            { text: 'Lean', correct: false }
-            ]
-    },
-]
+        'answer' : ['Cinema', 'Shop', 'Library', 'Beach']
+    }
+
+var questionSelection6 = 
+    {
+        'question' : 'Question. If Oisín said his hair is the colour "dubh", what colour is his hair?'
+    }
+
+var answerSelection6 =
+    {
+        'answer' : ['Black', 'Blonde', 'Brown', 'Ginger']
+    }
+
+var questionSelection7 = 
+    {
+        'question' : 'Question. If the sky is the colour "gorm", what colour is the sky?'
+    }
+
+var answerSelection7 =
+    {
+        'answer' : ['Blue', 'Yellow', 'Grey', 'Black']
+    }
+
+var questionSelection8 = 
+    {
+        'question' : 'Question. "Corcaigh" is the name of which Irish county?'
+    }
+
+var answerSelection8 =
+    {
+        'answer' : ['Dublin', 'Cork', 'Limerick', 'Galway']
+    }
+
+var questionSelection9 = 
+    {
+        'question' : 'Question. Who is the "muinteoir" in the classroom?'
+    }
+
+var answerSelection9 =
+    {
+        'answer' : ['Pupil', 'Teacher', 'Principal', 'Parent']
+    }
+
+var questionSelection10 = 
+    {
+        'question' : 'Question. What is the Irish word for "bed"?'
+    }
+
+var answerSelection1 =
+    {
+        'answer' : ['Leaba', 'Leanach', 'Leabhar', 'Lean']
+    }
