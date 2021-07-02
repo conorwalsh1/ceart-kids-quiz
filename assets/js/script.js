@@ -3,6 +3,7 @@ const questionContainer = document.getElementById('question')
 const answerButtons = document.getElementById('answer-buttons')
 const nextButton = document.getElementById('next-btn')
 const buttonB = document.getElementById('btn--b');
+const scoreTracker = document.getElementById('score-number');
 
 var score = 0;
 let i = 0;
@@ -38,11 +39,16 @@ function correctAnswer() {
         document.getElementById('btn--d').style.backgroundColor = "red"
     }
 
+    buttonB.addEventListener('click', incrementScore())
+
     
 
-function incrementScore () {
-    
+function incrementScore() {
+    let oldScore = parseInt(document.getElementById("score-number").innerText);
+    document.getElementById("score-number").innerText = ++oldScore;
 }
+
+
 
 function finalResult () {
 

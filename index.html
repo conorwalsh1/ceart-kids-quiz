@@ -11,7 +11,7 @@
 <body>
     <header>
         <img class="logo" src="assets/images/LogoMakr-2vhs0Z copy.png" alt="logo">
-        <p class="score">Score: <span id="score-number">0</span></p>
+        <p class="score">Score: <span id="score-number">-1</span></p>
         <p class="quiz-description">Test your Irish language skills!</p>
         <p class="player-name hide">Name: <span id="player-name"></span></p>
     </header>
@@ -28,7 +28,7 @@
             <div id="question" class="hide"></div>
             <div id="answer-buttons" class="btn-grid hide">
                 <button id="btn--a"class="btn btn--a"></button>
-                <button id="btn--b" class="btn btn--b" onclick="correctAnswer()"></button>
+                <button id="btn--b" class="btn btn--b" onclick="correctAnswer(); incrementScore()"></button>
                 <button id="btn--c" class="btn btn--c"></button>
                 <button id="btn--d" class="btn btn--d"></button>
             </div>
