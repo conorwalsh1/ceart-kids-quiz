@@ -2,6 +2,7 @@ const startButton = document.getElementById('start-btn');
 const questionContainer = document.getElementById('question')
 const answerButtons = document.getElementById('answer-buttons')
 const nextButton = document.getElementById('next-btn')
+const buttonB = document.getElementById('btn--b');
 
 var score = 0;
 let i = 0;
@@ -24,21 +25,20 @@ function startQuiz() {
 }
 startButton.addEventListener('click', startQuiz);
 
-/*nextQuestion();
-
 function nextQuestion() {
-    let questionBank;
-    for (i = 0; i >= questionSelection; i++);
-    console.log('Next question loaded') 
+    
+
+nextButton.addEventListener('click', nextQuestion()) 
 }
 
-questionContainer.innerHTML = 'Q.' + nextQuestion[i]
+function correctAnswer() {
+        document.getElementById('btn--b').style.backgroundColor = "green"
+        document.getElementById('btn--a').style.backgroundColor = "red"
+        document.getElementById('btn--c').style.backgroundColor = "red"
+        document.getElementById('btn--d').style.backgroundColor = "red"
+    }
 
-nextButton.addEventListener('click', nextQuestion()) */
-
-function correctAnswer () {
-
-}
+    
 
 function incrementScore () {
     
@@ -55,7 +55,7 @@ var questionSelection1 =
 var answerSelection1 =
     {
         'answer' : ['1', '2', '3', '4']
-    }
+    }   
         
 var questionSelection2 = 
     {
@@ -65,7 +65,15 @@ var questionSelection2 =
 var answerSelection2 =
     {
         'answer' : ['Black', 'Red', 'Blue', 'Pink']
-    }
+    }   
+
+    function secondQuestion() {
+        document.getElementById('question').innerHTML = questionSelection2.question;
+        document.getElementById('btn--a').innerHTML = answerSelection2.answer[0];
+        document.getElementById('btn--b').innerHTML = answerSelection2.answer[1];
+        document.getElementById('btn--c').innerHTML = answerSelection2.answer[2];
+        document.getElementById('btn--d').innerHTML = answerSelection2.answer[3];
+} 
 
 var questionSelection3 = 
     {
@@ -142,7 +150,7 @@ var questionSelection10 =
         'question' : 'Question. What is the Irish word for "bed"?'
     }
 
-var answerSelection1 =
+var answerSelection10 =
     {
         'answer' : ['Leaba', 'Leanach', 'Leabhar', 'Lean']
     }
