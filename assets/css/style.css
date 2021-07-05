@@ -12,8 +12,8 @@ body {
 
 .logo {
   display: block;
-  height: 150px;
-  width: 320px;
+  height: 140px;
+  width: 280px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -57,16 +57,19 @@ body {
     float: none;
 }
 
-#welcome-message, #question {
-    margin: 35px 10px 100px 10px;
+#welcome-message {
+    margin: 35px 10px 60px 10px;
     text-align: center;
-    width: 100%;
-    font-size: 25px;
+    font-size: 35px;
     color: white;
 }
 
 #question {
+    margin: 35px 10px 0px 10px;
     text-align: center;
+    font-size: 35px;
+    color: white;
+    
 }
 
 .first-name {
@@ -98,8 +101,18 @@ body {
     font-size: 1.5rem;
 }
 
-#start-btn, #next-btn {
-    font-size: 1.5rem;
+#start-btn {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 50%;
+}
+
+#next-btn {
+    font-size: 1.75rem;
     font-weight: bold;
     padding: 10px 20px;
     margin-left: auto;
@@ -115,13 +128,14 @@ body {
 }
 
 .btn {
-    font-size: 20px;
+    font-size: 30px;
     width: 100%;
     background-color: white;
     border: 2px double rgb(117, 86, 45);
     border-radius: 8px;
     cursor: pointer;
     transition: 0.8s;
+    margin-bottom: 10px;
 }
 
 .hide {
@@ -151,17 +165,17 @@ body {
 @media (max-width: 1020px) {
     
     .score {
-        margin: 0px 10px 10px 10px;
+        margin: -15px 10px 15px 10px;
         text-align: center;
     }
 
-    .answer-a-prefix, .answer-b-prefix, .answer-c-prefix  {
+    .btn--a, .btn--b, .btn--c, .btn--d  {
         display: block;
         margin-left: auto;
         margin-right: auto;
         width: 50%;
         text-align: center;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
     }
 
 }
@@ -172,17 +186,67 @@ body {
     }
 
 }
-@media (max-width: 410px) {
+@media (max-width: 420px) {
     .logo {
-        width: 250px;
+        height: 120px;
+        width: 260px;
     }
 
-    .score {
-        font-size: 25px;
-        margin-top: 20px;
+    #score-number, .score {
+        font-size: 35px;
+        margin-top: 5px;
+    }
+
+    #welcome-message {
+        font-size: 30px;
+    }
+
+    .btn-grid {
+        height: 220px;
+    }
+
+    .quiz-area {
+        height: 150vh;
+    }
+
+    #next-btn {
+        margin-top: 50px;
     }
 
     .quiz-question {
         margin: -10px 10px 10px 10px;
     }
+
+    .btn--a, .btn--b, .btn--c, .btn--d {
+        width: 75%;
+    }
+
+    #start-btn {
+        width: 75%;
+    }
+}
+
+@media (max-width: 350px) {
+    #welcome-message {
+        font-size: 25px;
+    }
+
+    #start-btn {
+        font-size: 20px;
+        margin-top: -20px;
+    }
+
+    #question {
+        font-size: 25px;
+    }
+
+    .btn--a, .btn--b, .btn--c, .btn--d {
+        font-size: 25px;
+    }
+
+    #next-btn {
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
 }

@@ -41,6 +41,7 @@ function generateFirstQuestion(questionCounter) {
  }
 
 function generateNextQuestion() {
+    console.log('Next question loaded')
     questionCounter++;
     generateFirstQuestion(questionCounter);
     clearCorrectColor()
@@ -77,7 +78,7 @@ function incrementScore() {
 
 
 function finalResult () {
-    if (questionCounter == 9) {
+    if (questionCounter >= 9) {
         alert('Congratulations on completing the quiz! You scored /10!')
     }
 }
