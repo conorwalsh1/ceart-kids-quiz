@@ -58,11 +58,13 @@ function correctAnswer() {
     buttonB.addEventListener('click', incrementScore())
 
 function clearCorrectColor() {
-    document.getElementById('btn--a').removeAttribute("style");
-    document.getElementById('btn--a').style.backgroundColor = "red"
-    document.getElementById('btn--c').style.backgroundColor = "red"
-    document.getElementById('btn--d').style.backgroundColor = "red"
+    document.getElementById('btn--a').style.backgroundColor = "white"
+    document.getElementById('btn--b').style.backgroundColor = "white"
+    document.getElementById('btn--c').style.backgroundColor = "white"
+    document.getElementById('btn--d').style.backgroundColor = "white"
 }
+
+nextButton.addEventListener('click', clearCorrectColor());
 
 
     
