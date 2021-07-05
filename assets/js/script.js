@@ -77,48 +77,50 @@ function incrementScore() {
 
 
 function finalResult () {
-
+    if (questionCounter == 9) {
+        alert('Congratulations on completing the quiz! You scored /10!')
+    }
 }
 
 var questionSelection = [
     {
-        'question' : 'Question. If you have "dhá úll", how many apples do you have?',
+        'question' : 'Question 1. If you have "dhá úll", how many apples do you have?',
         'answer' : ['1', '2', '3', '4']
     }, 
     {
-        'question' : 'Question. If a house is painted the colour "dearg", what colour is it?',
+        'question' : 'Question 2. If a house is painted the colour "dearg", what colour is it?',
         'answer' : ['Black', 'Red', 'Blue', 'Pink']
     },
     {
-        'question' : 'Question. "Bó" is the name of what farm animal?',
-        'answer' : ['Cow', 'Pig', 'Sheep', 'Goat']
+        'question' : 'Question 3. "Bó" is the name of what farm animal?',
+        'answer' : ['Pig', 'Cow', 'Sheep', 'Goat']
     },
     {
-        'question' : 'Question. "Uisce" is the name for what kind of drink?',
-        'answer' : ['Milk', 'Orange Juice', 'Water', 'Tea']
+        'question' : 'Question 4. "Uisce" is the name for what kind of drink?',
+        'answer' : ['Milk', 'Water', 'Orange Juice', 'Tea']
     },
     {
-        'question' : 'Question. If I go to the "siopa", where am I going?',
+        'question' : 'Question 5. If I go to the "siopa", where am I going?',
         'answer' : ['Cinema', 'Shop', 'Library', 'Beach']
     },
     {
-        'question' : 'Question. If Oisín said his hair is the colour "dubh", what colour is his hair?',
-        'answer' : ['Black', 'Blonde', 'Brown', 'Ginger']
+        'question' : 'Question 6. If Oisín said his hair is the colour "dubh", what colour is his hair?',
+        'answer' : ['Blonde', 'Black', 'Brown', 'Ginger']
     },
     {
-        'question' : 'Question. If the sky is the colour "gorm", what colour is the sky?',
-        'answer' : ['Blue', 'Yellow', 'Grey', 'Black']
+        'question' : 'Question 7. If the sky is the colour "gorm", what colour is the sky?',
+        'answer' : ['Yellow', 'Blue', 'Grey', 'Black']
     },
     {
-        'question' : 'Question. "Corcaigh" is the name of which Irish county?',
+        'question' : 'Question 8. "Corcaigh" is the name of which Irish county?',
         'answer' : ['Dublin', 'Cork', 'Limerick', 'Galway']
     },
     {
-        'question' : 'Question. Who is the "muinteoir" in the classroom?',
+        'question' : 'Question 9. Who is the "muinteoir" in the classroom?',
         'answer' : ['Pupil', 'Teacher', 'Principal', 'Parent']
     },
     {
-        'question' : 'Question. What is the Irish word for "bed"?',
-        'answer' : ['Leaba', 'Leanach', 'Leabhar', 'Lean']
+        'question' : 'Question 10. What is the Irish word for "bed"?',
+        'answer' : ['Leanach', 'Leaba', 'Leabhar', 'Lean']
     }
 ]
