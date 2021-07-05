@@ -9,6 +9,7 @@ const buttonD = document.getElementById('btn--d');
 
 var score = 0;
 let i = 0;
+var questionCounter = 0;
 
 function startQuiz() {
     console.log('The quiz has started!')
@@ -21,43 +22,48 @@ function startQuiz() {
     document.getElementById('welcome-message').style.display = 'none'
     document.getElementById('question').style.display = 'block'
 
-    generateFirstQuestion();
+    generateFirstQuestion(questionCounter);
     
 }
 startButton.addEventListener('click', startQuiz);
 
-function generateFirstQuestion() {
-    let firstQuestion = questionSelection[0];
-    questionContainer.innerHTML = questionSelection[0].question;
-    let firstAnswerA = questionSelection[0];
-    buttonA.innerHTML = questionSelection[0].answer[0];
-    let firstAnswerB = questionSelection[0];
-    buttonB.innerHTML = questionSelection[0].answer[1];
-    let firstAnswerC = questionSelection[0];
-    buttonC.innerHTML = questionSelection[0].answer[2];
-    let firstAnswerD = questionSelection[0];
-    buttonD.innerHTML = questionSelection[0].answer[3];
+function generateFirstQuestion(questionCounter) {
+    let firstQuestion = questionSelection[questionCounter];
+    questionContainer.innerHTML = questionSelection[questionCounter].question;
+    let firstAnswerA = questionSelection[questionCounter];
+    buttonA.innerHTML = questionSelection[questionCounter].answer[0];
+    let firstAnswerB = questionSelection[questionCounter];
+    buttonB.innerHTML = questionSelection[questionCounter].answer[1];
+    let firstAnswerC = questionSelection[questionCounter];
+    buttonC.innerHTML = questionSelection[questionCounter].answer[2];
+    let firstAnswerD = questionSelection[questionCounter];
+    buttonD.innerHTML = questionSelection[questionCounter].answer[3];
  }
 
 function generateNextQuestion() {
-    let nextQuestion = questionSelection
+    questionCounter++;
+    generateFirstQuestion(questionCounter);
+    clearCorrectColor()
 }
 
-nextButton.addEventListener('click', startQuiz);
-
-
-
-
-
+nextButton.addEventListener('click', generateNextQuestion);
 
 function correctAnswer() {
-        document.getElementById('btn--b').style.backgroundColor = "green"
-        document.getElementById('btn--a').style.backgroundColor = "red"
-        document.getElementById('btn--c').style.backgroundColor = "red"
-        document.getElementById('btn--d').style.backgroundColor = "red"
+    document.getElementById('btn--b').style.backgroundColor = "green"
+    document.getElementById('btn--a').style.backgroundColor = "red"
+    document.getElementById('btn--c').style.backgroundColor = "red"
+    document.getElementById('btn--d').style.backgroundColor = "red"
     }
 
     buttonB.addEventListener('click', incrementScore())
+
+function clearCorrectColor() {
+    document.getElementById('btn--a').removeAttribute("style");
+    document.getElementById('btn--a').style.backgroundColor = "red"
+    document.getElementById('btn--c').style.backgroundColor = "red"
+    document.getElementById('btn--d').style.backgroundColor = "red"
+}
+
 
     
 
