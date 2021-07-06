@@ -20,7 +20,7 @@ body {
   
 .score, #score-number {
     font-size: 75px;
-    margin: -75px 25px 10px 10px;
+    margin: -120px 25px 10px 10px;
     text-align: left;
 }
   
@@ -43,14 +43,7 @@ body {
     float: none;
 }
   
-#welcome-message {
-    margin: 95px 10px 290px 10px;
-    text-align: center;
-    font-size: 75px;
-    color: white;
-}
-
-#closing-message {
+#welcome-message, #closing-message {
     margin: 95px 10px 290px 10px;
     text-align: center;
     font-size: 75px;
@@ -142,7 +135,7 @@ body {
         height: 75vh;
     }
     
-    #welcome-message {
+    #welcome-message, #closing-message {
         margin: 65px 10px 60px 10px;
         font-size: 40px;
     }
@@ -227,7 +220,7 @@ body {
         margin-left: 30px;
     }
 
-    #welcome-message {
+    #welcome-message, #closing-message {
         font-size: 27px;
         margin-top: 20px;
     }
@@ -255,7 +248,7 @@ body {
 }
 
 @media (max-width: 375px) {
-    #welcome-message {
+    #welcome-message, #closing-message {
         font-size: 25px;
     }
 
@@ -280,7 +273,7 @@ body {
 }
 
 @media (max-width: 320px) {
-    #welcome-message {
+    #welcome-message, #closing-message {
         font-size: 20px;
     }
 
