@@ -1,3 +1,5 @@
+https://stackoverflow.com/questions/11404744/css-media-queries-max-width-or-max-height used to set media query screen height
+
 I came across bug cannot set property display of underfined displaying buttons, found info on https://stackoverflow.com/questions/12194435/cannot-set-property-display-of-undefined
 
 

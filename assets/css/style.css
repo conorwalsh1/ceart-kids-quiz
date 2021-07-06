@@ -16,382 +16,61 @@ body {
     width: 525px;
     margin-left: auto;
     margin-right: auto;
-  }
-  
-  .score, #score-number {
-      font-size: 75px;
-      margin: -75px 25px 10px 10px;
-      text-align: left;
-  }
-  
-  .quiz-description {
-      font-size: 75px;
-      margin: -5px 25px 10px 10px;
-      text-align: center;
-  }
-  
-  #player-name {
-      font-size: 40px;
-      margin: -75px 25px 10px 10px;
-      text-align: right;
-  }
-  
-  /* Quiz Area */
-  
-  .quiz-area { 
-      background-color: rgb(26, 26, 26);
-      box-sizing: border-box;
-      border: 16px solid rgb(117, 86, 45);
-      width: 100%;
-      height: 80vh;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 30px;
-      padding: 1%;
-      
-  }
-  
-  #question-container {
-      float: none;
-  }
-  
-  #welcome-message {
-      margin: 95px 10px 290px 10px;
-      text-align: center;
-      font-size: 75px;
-      color: white;
-  }
-  
-  #question {
-      margin: 75px 10px 0px 10px;
-      text-align: center;
-      font-size: 75px;
-      color: white;
-      
-  }
-  
-  .first-name {
-      color: white;
-      text-align: center;
-      font-size: 30px;
-      padding-top: 140px;
-  }
-  
-  #username-box {
-      font-size: 30px;
-  }
-  
-  
-  
-  /* Quiz Answer */
-  
-  
-  
-  .btn-grid {
-      display: grid;
-      grid-template-columns: repeat(2, auto);
-      gap: 20px;
-      width: auto;
-      margin: 200px 20px 40px 20px;
-      font-size: 1.5rem;
-  }
-  
-  #start-btn {
-      font-size: 5rem;
-      font-weight: bold;
-      padding: 10px 20px;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 50px;
-      width: 50%;
-  }
-  
-  #next-btn {
-      font-size: 5rem;
-      font-weight: bold;
-      padding: 20px 40px;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 50px;
-      width: 50%;
-  }
-  
-  .controls {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  }
-  
-  .btn {
-      font-size: 80px;
-      width: 100%;
-      background-color: white;
-      border: 2px double rgb(117, 86, 45);
-      border-radius: 8px;
-      cursor: pointer;
-      transition: 0.8s;
-      margin-bottom: 50px;
-  }
-  
-  .hide {
-      display: none;
-  }
-  
-  .visible {
-      display: block;
-  }
-  
-  .btn:hover {
-      background-color: rgb(255, 123, 0);
-  }
-  
-  .btn.correct {
-      background-color: seagreen;
-  }
-  
-  .btn.wrong {
-      background-color: crimson;
-      color: white;
-  }
-
-  @media (max-width: 1440px) {
-    .logo {
-        display: block;
-        height: 140px;
-        width: 280px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-      
-      .score, #score-number {
-          font-size: 45px;
-          margin: -75px 25px 10px 10px;
-          text-align: left;
-      }
-      
-      .quiz-description {
-          font-size: 30px;
-          margin: -5px 25px 10px 10px;
-          text-align: center;
-      }
-      
-      #player-name {
-          font-size: 40px;
-          margin: -75px 25px 10px 10px;
-          text-align: right;
-      }
-      
-      /* Quiz Area */
-      
-      .quiz-area { 
-          background-color: rgb(26, 26, 26);
-          box-sizing: border-box;
-          border: 8px solid rgb(117, 86, 45);
-          width: 100%;
-          height: 80vh;
-          margin-left: auto;
-          margin-right: auto;
-          margin-top: 30px;
-          padding: 1%;
-          
-      }
-      
-      #question-container {
-          float: none;
-      }
-      
-      #welcome-message {
-          margin: 65px 10px 60px 10px;
-          text-align: center;
-          font-size: 45px;
-          color: white;
-      }
-      
-      #question {
-          margin: 65px 10px 0px 10px;
-          text-align: center;
-          font-size: 45px;
-          color: white;
-          
-      }
-      
-      .first-name {
-          color: white;
-          text-align: center;
-          font-size: 30px;
-          padding-top: 140px;
-      }
-      
-      #username-box {
-          font-size: 30px;
-      }
-      
-      
-      
-      /* Quiz Answer */
-      
-      
-      
-      .btn-grid {
-          display: grid;
-          grid-template-columns: repeat(2, auto);
-          gap: 20px;
-          width: auto;
-          margin: 110px 20px 20px 20px;
-          font-size: 1.5rem;
-      }
-      
-      #start-btn {
-          font-size: 2.75rem;
-          font-weight: bold;
-          padding: 10px 20px;
-          margin-left: auto;
-          margin-right: auto;
-          margin-top: 150px;
-          width: 50%;
-      }
-      
-      #next-btn {
-          font-size: 2rem;
-          font-weight: bold;
-          padding: 10px 20px;
-          margin-left: auto;
-          margin-right: auto;
-          margin-top: 50px;
-          width: 50%;
-      }
-      
-      .controls {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-      }
-      
-      .btn {
-          font-size: 36px;
-          width: 100%;
-          background-color: white;
-          border: 2px double rgb(117, 86, 45);
-          border-radius: 8px;
-          cursor: pointer;
-          transition: 0.8s;
-          margin-bottom: 20px;
-      }
-      
-      .hide {
-          display: none;
-      }
-      
-      .visible {
-          display: block;
-      }
-      
-      .btn:hover {
-          background-color: rgb(255, 123, 0);
-      }
-      
-      .btn.correct {
-          background-color: seagreen;
-      }
-      
-      .btn.wrong {
-          background-color: crimson;
-          color: white;
-      }
 }
-
-  @media (max-width: 1024px) { 
-.logo {
-  display: block;
-  height: 140px;
-  width: 280px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
+  
 .score, #score-number {
-    font-size: 40px;
+    font-size: 75px;
     margin: -75px 25px 10px 10px;
     text-align: left;
 }
-
-.quiz-description {
-    font-size: 30px;
-    margin: -5px 25px 10px 10px;
-    text-align: center;
-}
-
-#player-name {
-    font-size: 40px;
-    margin: -75px 25px 10px 10px;
-    text-align: right;
-}
-
+  
 /* Quiz Area */
-
+  
 .quiz-area { 
     background-color: rgb(26, 26, 26);
     box-sizing: border-box;
-    border: 8px solid rgb(117, 86, 45);
+    border: 16px solid rgb(117, 86, 45);
     width: 100%;
     height: 80vh;
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
     padding: 1%;
-    
+      
 }
-
+  
 #question-container {
     float: none;
 }
-
+  
 #welcome-message {
-    margin: 35px 10px 60px 10px;
+    margin: 95px 10px 290px 10px;
     text-align: center;
-    font-size: 35px;
+    font-size: 75px;
     color: white;
 }
-
+  
 #question {
-    margin: 35px 10px 0px 10px;
+    margin: 75px 10px 0px 10px;
     text-align: center;
-    font-size: 35px;
+    font-size: 75px;
     color: white;
-    
+      
 }
-
-.first-name {
-    color: white;
-    text-align: center;
-    font-size: 30px;
-    padding-top: 140px;
-}
-
-#username-box {
-    font-size: 30px;
-}
-
-
-
+  
 /* Quiz Answer */
-
-
-
+  
 .btn-grid {
     display: grid;
     grid-template-columns: repeat(2, auto);
     gap: 20px;
     width: auto;
-    height: 180px;
-    padding-top: 30px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 130px 20px 40px 20px;
     font-size: 1.5rem;
 }
-
+  
 #start-btn {
-    font-size: 2rem;
+    font-size: 5rem;
     font-weight: bold;
     padding: 10px 20px;
     margin-left: auto;
@@ -399,123 +78,229 @@ body {
     margin-top: 50px;
     width: 50%;
 }
-
+  
 #next-btn {
-    font-size: 1.75rem;
+    font-size: 4rem;
     font-weight: bold;
-    padding: 10px 20px;
+    padding: 20px 40px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
     width: 50%;
 }
-
+  
 .controls {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
+  
 .btn {
-    font-size: 30px;
+    font-size: 55px;
     width: 100%;
     background-color: white;
     border: 2px double rgb(117, 86, 45);
     border-radius: 8px;
     cursor: pointer;
     transition: 0.8s;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
 }
-
+  
 .hide {
     display: none;
 }
-
+  
 .visible {
     display: block;
 }
-
+  
 .btn:hover {
     background-color: rgb(255, 123, 0);
 }
 
-.btn.correct {
-    background-color: seagreen;
-}
-
-.btn.wrong {
-    background-color: crimson;
-    color: white;
-}
-}
-
-@media (max-width: 735px) {
-    .quiz-area {
-        max-height: 100vh;
-    }
-
-}
-@media (max-width: 420px) {
+@media screen and (max-width: 1500px) {
     .logo {
-        height: 120px;
-        width: 260px;
+        height: 140px;
+        width: 320px;
     }
-
-    #score-number, .score {
-        font-size: 35px;
-        margin-top: 5px;
+      
+    .score, #score-number {
+        font-size: 55px;
     }
-
+      
+    /* Quiz Area */
+      
+    .quiz-area { 
+        border: 8px solid rgb(117, 86, 45);
+        height: 75vh;
+    }
+    
     #welcome-message {
-        font-size: 30px;
+        margin: 65px 10px 60px 10px;
+        font-size: 40px;
     }
-
+      
+    #question {
+        margin: 50px 10px 0px 10px;
+        font-size: 40px;
+    }
+    
+    /* Quiz Answer */
+      
     .btn-grid {
-        height: 220px;
+        margin: 60px 20px 20px 20px;
+        font-size: 1.5rem;
     }
-
-    .quiz-area {
-        height: 150vh;
+      
+    #start-btn {
+        font-size: 2.50rem;
+        margin-top: 150px;
     }
-
+      
     #next-btn {
-        margin-top: 50px;
+        font-size: 1.75rem;
+        padding: 10px 20px;
+    }
+      
+    .btn {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .quiz-area {
+        height: 75vh;
     }
 
-    .quiz-question {
-        margin: -10px 10px 10px 10px;
-    }
-
-    .btn--a, .btn--b, .btn--c, .btn--d {
-        width: 75%;
+    .score, #score-number {
+        font-size: 35px;
+        text-align: center;
+        margin-top: -20px;
+        margin-left: 10px;
     }
 
     #start-btn {
-        width: 75%;
+        font-size: 2.25rem;
+        margin-top: 90px;
+    }
+
+    #question {
+        font-size: 30px;
+    }
+
+    .btn {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    #next-btn {
+        font-size: 1.75rem;
+        padding: 10px 20px;
+    }
+
+}
+
+@media screen and (max-width: 635px) {
+    .logo {
+        height: 80px;
+        width: 210px;
+    }
+
+    .quiz-area {
+        height: 75vh;
+    }
+
+    #score-number, .score {
+        font-size: 25px;
+        margin-top: 5px;
+    }
+
+    .score {
+        margin-left: 30px;
+    }
+
+    #welcome-message {
+        font-size: 27px;
+        margin-top: 20px;
+    }
+
+    #start-btn {
+        font-size: 1.8rem;
+        margin-top: 30px;
+    }
+
+    #question {
+        font-size: 27px;
+        margin-top: 20px;
+    }
+
+    .btn {
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+
+    #next-btn {
+        font-size: 1.5rem;
+        padding: 10px 20px;
+        margin-top: 15px;
     }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
     #welcome-message {
         font-size: 25px;
     }
 
     #start-btn {
-        font-size: 20px;
-        margin-top: -20px;
+        font-size: 25px;
     }
 
     #question {
         font-size: 25px;
     }
 
-    .btn--a, .btn--b, .btn--c, .btn--d {
-        font-size: 25px;
-    }
-
     #next-btn {
-        margin-top: 35px;
+        margin-top: 15px;
         font-size: 20px;
     }
 
+    .btn {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media (max-width: 320px) {
+    #welcome-message {
+        font-size: 20px;
+    }
+
+    .quiz-area {
+        height: 70vh;
+    }
+
+    #start-btn {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    #question {
+        font-size: 20px;
+    }
+
+    #next-btn {
+        margin-top: 10px;
+        font-size: 15px;
+    }
+
+    .btn-grid {
+        margin-top: 20px;
+    }
+
+    .btn {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
 }

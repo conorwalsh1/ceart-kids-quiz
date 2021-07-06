@@ -105,7 +105,7 @@ var questionSelection = [
         'answer' : ['Cinema', 'Shop', 'Library', 'Beach']
     },
     {
-        'question' : 'Question 6. If Oisín said his hair is the colour "dubh", what colour is his hair?',
+        'question' : "Question 6. John's hair is the colour 'dubh', what colour is John's hair?",
         'answer' : ['Blonde', 'Black', 'Brown', 'Ginger']
     },
     {
