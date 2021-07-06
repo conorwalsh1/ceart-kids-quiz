@@ -49,6 +49,13 @@ body {
     font-size: 75px;
     color: white;
 }
+
+#closing-message {
+    margin: 95px 10px 290px 10px;
+    text-align: center;
+    font-size: 75px;
+    color: white;
+}
   
 #question {
     margin: 75px 10px 0px 10px;

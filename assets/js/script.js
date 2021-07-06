@@ -1,5 +1,7 @@
 const startButton = document.getElementById('start-btn');
 const questionContainer = document.getElementById('question');
+const welcomeMessage = document.getElementById('welcome-message');
+const closingMessage = document.getElementById('closing-message');
 const answerButtons = document.getElementById('answer-buttons');
 const nextButton = document.getElementById('next-btn');
 const scoreNumber =document.getElementById('score-number');
@@ -47,10 +49,18 @@ function generateNextQuestion() {
     console.log('Next question loaded')
     do {questionCounter++
       }
-      while (questionCounter > 11);
-    //   if (questionCounter >= 11) {
-    //       alert('Done')
-    //   }
+      while (questionCounter > 10);
+      if (questionCounter == 10) {
+          console.log('Quiz End');
+          document.getElementById('question').style.display = 'none';
+          document.getElementById('next-btn').style.display = 'none';
+          document.getElementById('btn--a').style.display = 'none';
+          document.getElementById('btn--b').style.display = 'none';
+          document.getElementById('btn--c').style.display = 'none';
+          document.getElementById('btn--d').style.display = 'none';
+          document.getElementById('closing-message').style.display = 'block'
+
+        }
     generateFirstQuestion(questionCounter);
     clearCorrectColor()
 }
@@ -85,13 +95,11 @@ function incrementScore() {
 
 
 
-function finalResult () {
-
-    let quizEnd = (questionSelection[questionCounter].question == undefined)
-    if (quizEnd) {
-        alert(`Congratulations! You scored ${oldScore}/10! Great effort!`)
-    }
-}
+// function finalResult () {
+//     if (questionSelection[questionCounter].question = null) {
+//         alert(`Congratulations! You scored ${oldScore}/10! Great effort!`)
+//     }
+// }
 
 var questionSelection = [
     {
