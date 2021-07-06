@@ -1,15 +1,18 @@
 const startButton = document.getElementById('start-btn');
-const questionContainer = document.getElementById('question')
-const answerButtons = document.getElementById('answer-buttons')
-const nextButton = document.getElementById('next-btn')
+const questionContainer = document.getElementById('question');
+const answerButtons = document.getElementById('answer-buttons');
+const nextButton = document.getElementById('next-btn');
+const scoreNumber =document.getElementById('score-number');
 const buttonA = document.getElementById('btn--a');
 const buttonB = document.getElementById('btn--b');
 const buttonC = document.getElementById('btn--c');
 const buttonD = document.getElementById('btn--d');
 
+
 var score = 0;
 let i = 0;
 var questionCounter = 0;
+var questLength = questionCounter.length
 
 function startQuiz() {
     console.log('The quiz has started!')
@@ -42,7 +45,9 @@ function generateFirstQuestion(questionCounter) {
 
 function generateNextQuestion() {
     console.log('Next question loaded')
-    questionCounter++;
+    do {questionCounter++
+      }
+      while (questionCounter > 11);
     generateFirstQuestion(questionCounter);
     clearCorrectColor()
 }
@@ -78,15 +83,17 @@ function incrementScore() {
 
 
 function finalResult () {
-    if (questionCounter >= 9) {
-        alert('Congratulations on completing the quiz! You scored /10!')
+
+    let quizEnd = questionSelection[questionCounter][10]
+    if (quizEnd == true) {
+        alert(`Congratulations! You scored ${scoreNumber}/10! Great effort!`)
     }
 }
 
 var questionSelection = [
     {
         'question' : 'Question 1. If you have "dhá úll", how many apples do you have?',
-        'answer' : ['1', '2', '3', '4']
+        'answer' : ['1', '2', '3', '4'],
     }, 
     {
         'question' : 'Question 2. If a house is painted the colour "dearg", what colour is it?',
