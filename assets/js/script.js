@@ -48,6 +48,9 @@ function generateNextQuestion() {
     do {questionCounter++
       }
       while (questionCounter > 11);
+    //   if (questionCounter >= 11) {
+    //       alert('Done')
+    //   }
     generateFirstQuestion(questionCounter);
     clearCorrectColor()
 }
@@ -84,9 +87,9 @@ function incrementScore() {
 
 function finalResult () {
 
-    let quizEnd = questionSelection[questionCounter][10]
-    if (quizEnd == true) {
-        alert(`Congratulations! You scored ${scoreNumber}/10! Great effort!`)
+    let quizEnd = (questionSelection[questionCounter].question == undefined)
+    if (quizEnd) {
+        alert(`Congratulations! You scored ${oldScore}/10! Great effort!`)
     }
 }
 
