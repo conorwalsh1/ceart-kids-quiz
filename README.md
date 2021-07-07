@@ -1,3 +1,9 @@
+https://www.digitalocean.com/community/tutorials/how-to-add-a-favicon-to-your-website-with-html favicon link code copied from here
+
+https://www.youtube.com/watch?v=pA8103S-yqk to add favicon to site, it was not made clear through love maths project
+
+https://stackoverflow.com/questions/2573979/force-page-reload-with-html-anchors-html-js add refresh feature once logo is clicked
+
 https://stackoverflow.com/questions/11404744/css-media-queries-max-width-or-max-height used to set media query screen height
 
 I came across bug cannot set property display of underfined displaying buttons, found info on https://stackoverflow.com/questions/12194435/cannot-set-property-display-of-undefined
