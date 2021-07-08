@@ -86,20 +86,6 @@ buttonB.addEventListener('click', correctAnswer);
 buttonC.addEventListener('click', correctAnswer);
 buttonD.addEventListener('click', correctAnswer);
 
-
-
-
-
-
-
-    // document.getElementById('btn--b').style.backgroundColor = "green"
-    // document.getElementById('btn--a').style.backgroundColor = "red"
-    // document.getElementById('btn--c').style.backgroundColor = "red"
-    // document.getElementById('btn--d').style.backgroundColor = "red"
-    // }
-
-    // buttonB.addEventListener('click', incrementScore())
-
 function clearCorrectColor() {
     document.getElementById('btn--a').style.backgroundColor = "white"
     document.getElementById('btn--b').style.backgroundColor = "white"
