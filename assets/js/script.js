@@ -56,7 +56,6 @@ function generateNextQuestion() {
           document.getElementById('btn--c').style.display = 'none';
           document.getElementById('btn--d').style.display = 'none';
           document.getElementById('closing-message').style.display = 'block'
-
         }
     generateFirstQuestion(questionCounter);
     clearCorrectColor()
@@ -66,16 +65,14 @@ nextButton.addEventListener('click', generateNextQuestion);
 
 function correctAnswer() {
     var theAnswer = questionSelection[questionCounter].correct
-    if (theAnswer == true) {
-        style.backgroundColor = "green"
+    var userAnswer = questionSelection[questionCounter].answer
+    if (theAnswer === userAnswer) {
+        document.getElementById('btn--a', 'btn--b', 'btn--c', 'btn--d').style.backgroundColor = "green"
     } else {
-        style.backgroundColor = "red"
+        document.getElementById('btn--a', 'btn--b', 'btn--c', 'btn--d').style.backgroundColor = "red"
     }
 }
-buttonA.onclick = correctAnswer();
-buttonB.onclick = correctAnswer();
-buttonC.onclick = correctAnswer();
-buttonD.onclick = correctAnswer();
+
 
 
 
