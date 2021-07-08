@@ -63,15 +63,28 @@ function generateNextQuestion() {
 
 nextButton.addEventListener('click', generateNextQuestion);
 
-function correctAnswer() {
+function correctAnswer(e) {
+    let selectedButton = e.target;
+    console.log(selectedButton)
+    console.log(selectedButton.innerHTML)
     var theAnswer = questionSelection[questionCounter].correct
-    var userAnswer = questionSelection[questionCounter].answer
-    if (theAnswer === userAnswer) {
-        document.getElementById('btn--a', 'btn--b', 'btn--c', 'btn--d').style.backgroundColor = "green"
+    console.log(theAnswer)
+    var userAnswer = selectedButton.innerHTML
+    console.log(userAnswer)
+    if (userAnswer == theAnswer) {
+        console.log('Answer is correct');
+        incrementScore();
+        selectedButton.style.backgroundColor = "green"
     } else {
-        document.getElementById('btn--a', 'btn--b', 'btn--c', 'btn--d').style.backgroundColor = "green"
+        console.log('Answer is wrong')
+        selectedButton.style.backgroundColor = "red"
     }
 }
+
+buttonA.addEventListener('click', correctAnswer);
+buttonB.addEventListener('click', correctAnswer);
+buttonC.addEventListener('click', correctAnswer);
+buttonD.addEventListener('click', correctAnswer);
 
 
 
