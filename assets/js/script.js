@@ -69,7 +69,7 @@ function correctAnswer() {
     if (theAnswer === userAnswer) {
         document.getElementById('btn--a', 'btn--b', 'btn--c', 'btn--d').style.backgroundColor = "green"
     } else {
-        document.getElementById('btn--a', 'btn--b', 'btn--c', 'btn--d').style.backgroundColor = "red"
+        document.getElementById('btn--a', 'btn--b', 'btn--c', 'btn--d').style.backgroundColor = "green"
     }
 }
 
@@ -98,14 +98,6 @@ function incrementScore() {
     let oldScore = parseInt(document.getElementById("score-number").innerText);
     document.getElementById("score-number").innerText = ++oldScore;
 }
-
-
-
-// function finalResult () {
-//     if (questionSelection[questionCounter].question = null) {
-//         alert(`Congratulations! You scored ${oldScore}/10! Great effort!`)
-//     }
-// }
 
 var questionSelection = [
     {
