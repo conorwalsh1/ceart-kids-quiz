@@ -1,7 +1,7 @@
 const startButton = document.getElementById('start-btn');
 const questionContainer = document.getElementById('question');
 const welcomeMessage = document.getElementById('welcome-message');
-const closingMessage = document.getElementById('closing-message');
+const closingMessage = document.getElementById('closing-message-1');
 const answerButtons = document.getElementById('answer-buttons');
 const nextButton = document.getElementById('next-btn');
 const correctNumber =document.getElementById('correct-number');
@@ -14,18 +14,18 @@ const buttonD = document.getElementById('btn--d');
 var score = 0;
 let i = 0;
 var questionCounter = 0;
-var questLength = questionCounter.length
+var questLength = questionCounter.length;
 
 function startQuiz() {
-    console.log('The quiz has started!')
+    console.log('The quiz has started!');
     var btnGrid = document.getElementsByClassName('btn-grid');
     for (var i = 0; i < btnGrid.length; i += 1){
     btnGrid[i].style.display = 'block';
 }
-    document.getElementById('next-btn', 'question').style.display = 'block'
-    document.getElementById('start-btn').style.display = 'none'
-    document.getElementById('welcome-message').style.display = 'none'
-    document.getElementById('question').style.display = 'block'
+    document.getElementById('next-btn', 'question').style.display = 'block';
+    document.getElementById('start-btn').style.display = 'none';
+    document.getElementById('welcome-message').style.display = 'none';
+    document.getElementById('question').style.display = 'block';
 
     generateFirstQuestion(questionCounter);
     
@@ -46,8 +46,8 @@ function generateFirstQuestion(questionCounter) {
  }
 
 function generateNextQuestion() {
-    console.log('Next question loaded')
-    questionCounter++
+    console.log('Next question loaded');
+    questionCounter++;
       if (questionCounter == 10) {
           console.log('Quiz End');
           document.getElementById('question').style.display = 'none';
@@ -56,33 +56,33 @@ function generateNextQuestion() {
           document.getElementById('btn--b').style.display = 'none';
           document.getElementById('btn--c').style.display = 'none';
           document.getElementById('btn--d').style.display = 'none';
-             if (scoreNumber >= 5) {
-                 console.log('Message 1')
-                document.getElementById('closing-message-1').style.display = 'block'
+             if (correctNumber == 5) {
+                 console.log('Message 1');
+                document.getElementById('closing-message-1').style.display = 'block';
              } else {
-                console.log('Message 2')
-                document.getElementById('closing-message-2').style.display = 'block'
+                console.log('Message 2');
+                document.getElementById('closing-message-2').style.display = 'block';
              }
           
         }
     generateFirstQuestion(questionCounter);
-    clearCorrectColor()
+    clearCorrectColor();
 }
 
 nextButton.addEventListener('click', generateNextQuestion);
 
 function correctAnswer(e) {
     let selectedButton = e.target;
-    var theAnswer = questionSelection[questionCounter].correct
-    var userAnswer = selectedButton.innerHTML
+    var theAnswer = questionSelection[questionCounter].correct;
+    var userAnswer = selectedButton.innerHTML;
     if (userAnswer == theAnswer) {
         console.log('Answer is correct');
         incrementScore();
-        selectedButton.style.backgroundColor = "green"
+        selectedButton.style.backgroundColor = "green";
     } else {
         console.log('Answer is wrong');
         incrementIncorrectScore();
-        selectedButton.style.backgroundColor = "red"
+        selectedButton.style.backgroundColor = "red";
     }
 }
 
@@ -92,10 +92,10 @@ buttonC.addEventListener('click', correctAnswer);
 buttonD.addEventListener('click', correctAnswer);
 
 function clearCorrectColor() {
-    document.getElementById('btn--a').style.backgroundColor = "white"
-    document.getElementById('btn--b').style.backgroundColor = "white"
-    document.getElementById('btn--c').style.backgroundColor = "white"
-    document.getElementById('btn--d').style.backgroundColor = "white"
+    document.getElementById('btn--a').style.backgroundColor = "white";
+    document.getElementById('btn--b').style.backgroundColor = "white";
+    document.getElementById('btn--c').style.backgroundColor = "white";
+    document.getElementById('btn--d').style.backgroundColor = "white";
 }
 
 function incrementScore() {
@@ -159,4 +159,4 @@ var questionSelection = [
         'answer' : ['Leanach', 'Leabhar', 'Leaba', 'Lean'],
         'correct' : 'Leaba'
     }
-]
+];
