@@ -4,7 +4,8 @@ const welcomeMessage = document.getElementById('welcome-message');
 const closingMessage = document.getElementById('closing-message');
 const answerButtons = document.getElementById('answer-buttons');
 const nextButton = document.getElementById('next-btn');
-const scoreNumber =document.getElementById('score-number');
+const correctNumber =document.getElementById('correct-number');
+const incorrectNumber =document.getElementById('incorrect-number');
 const buttonA = document.getElementById('btn--a');
 const buttonB = document.getElementById('btn--b');
 const buttonC = document.getElementById('btn--c');
@@ -55,7 +56,14 @@ function generateNextQuestion() {
           document.getElementById('btn--b').style.display = 'none';
           document.getElementById('btn--c').style.display = 'none';
           document.getElementById('btn--d').style.display = 'none';
-          document.getElementById('closing-message').style.display = 'block'
+             if (scoreNumber >= 5) {
+                 console.log('Message 1')
+                document.getElementById('closing-message-1').style.display = 'block'
+             } else {
+                console.log('Message 2')
+                document.getElementById('closing-message-2').style.display = 'block'
+             }
+          
         }
     generateFirstQuestion(questionCounter);
     clearCorrectColor()
@@ -65,18 +73,15 @@ nextButton.addEventListener('click', generateNextQuestion);
 
 function correctAnswer(e) {
     let selectedButton = e.target;
-    console.log(selectedButton)
-    console.log(selectedButton.innerHTML)
     var theAnswer = questionSelection[questionCounter].correct
-    console.log(theAnswer)
     var userAnswer = selectedButton.innerHTML
-    console.log(userAnswer)
     if (userAnswer == theAnswer) {
         console.log('Answer is correct');
         incrementScore();
         selectedButton.style.backgroundColor = "green"
     } else {
-        console.log('Answer is wrong')
+        console.log('Answer is wrong');
+        incrementIncorrectScore();
         selectedButton.style.backgroundColor = "red"
     }
 }
@@ -94,8 +99,13 @@ function clearCorrectColor() {
 }
 
 function incrementScore() {
-    let oldScore = parseInt(document.getElementById("score-number").innerText);
-    document.getElementById("score-number").innerText = ++oldScore;
+    let oldScore = parseInt(document.getElementById("correct-number").innerText);
+    document.getElementById("correct-number").innerText = ++oldScore;
+}
+
+function incrementIncorrectScore() {
+    let wrongScore = parseInt(document.getElementById("incorrect-number").innerText);
+    document.getElementById("incorrect-number").innerText = ++wrongScore;
 }
 
 var questionSelection = [

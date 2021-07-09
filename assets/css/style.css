@@ -16,13 +16,20 @@ body {
     width: 525px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 30px;
     cursor: pointer;
 }
   
-.score, #score-number {
+.correct-score, #correct-number {
     font-size: 75px;
     margin: -120px 25px 10px 10px;
     text-align: left;
+}
+
+.incorrect-score, #incorrect-number {
+    font-size: 75px;
+    margin: -100px 25px 10px 10px;
+    text-align: right;
 }
   
 /* Quiz Area */
@@ -44,7 +51,7 @@ body {
     float: none;
 }
   
-#welcome-message, #closing-message {
+#welcome-message, #closing-message-1, #closing-message-2 {
     margin: 95px 10px 290px 10px;
     text-align: center;
     font-size: 75px;
@@ -125,7 +132,11 @@ body {
         width: 320px;
     }
       
-    .score, #score-number {
+    .correct-score, #correct-number {
+        font-size: 55px;
+    }
+
+    .incorrect-score, #incorrect-number {
         font-size: 55px;
     }
       
@@ -136,7 +147,7 @@ body {
         height: 75vh;
     }
     
-    #welcome-message, #closing-message {
+    #welcome-message, #closing-message-1, #closing-message-2 {
         margin: 65px 10px 60px 10px;
         font-size: 40px;
     }
@@ -174,15 +185,23 @@ body {
         height: 72vh;
     }
 
-    .score, #score-number {
+    .correct-score, #correct-number {
         font-size: 35px;
-        text-align: center;
+        text-align: left;
         margin-top: -20px;
         margin-left: 10px;
         margin-bottom: -20px;
     }
 
-    #welcome-message, #closing-message {
+    .incorrect-score, #incorrect-number {
+        font-size: 35px;
+        text-align: right;
+        margin-top: -20px;
+        margin-left: 10px;
+        margin-bottom: -20px;
+    }
+
+    #welcome-message, #closing-message-1, #closing-message-2 {
         margin: 65px 10px 60px 10px;
         font-size: 30px;
     }
@@ -235,7 +254,12 @@ body {
         height: 75vh;
     }
 
-    #score-number, .score {
+    #correct-number, .correct-score {
+        font-size: 25px;
+        margin-top: 5px;
+    }
+
+    #incorrect-number, .incorrect-score {
         font-size: 25px;
         margin-top: 5px;
     }
@@ -244,7 +268,7 @@ body {
         margin-left: 30px;
     }
 
-    #welcome-message, #closing-message {
+    #welcome-message, #closing-message-1, #closing-message-2 {
         font-size: 27px;
         margin-top: 20px;
     }
@@ -272,7 +296,7 @@ body {
 }
 
 @media (max-width: 375px) {
-    #welcome-message, #closing-message {
+    #welcome-message, #closing-message-1, #closing-message-2 {
         font-size: 20px;
     }
 
