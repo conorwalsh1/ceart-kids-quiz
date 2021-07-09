@@ -130,14 +130,18 @@ body {
     .logo {
         height: 140px;
         width: 320px;
+        margin-bottom: 60px;
     }
       
     .correct-score, #correct-number {
-        font-size: 55px;
+        font-size: 45px;
+        margin-top: -140px;
+        margin-bottom: 50px;
     }
 
     .incorrect-score, #incorrect-number {
-        font-size: 55px;
+        font-size: 45px;
+        margin-top: -120px;
     }
       
     /* Quiz Area */
@@ -182,22 +186,23 @@ body {
 
 @media (max-width: 1024px) {
     .quiz-area {
-        height: 72vh;
+        height: 75vh;
+        margin-top: 35px;
     }
 
     .correct-score, #correct-number {
         font-size: 35px;
         text-align: left;
-        margin-top: -20px;
+        margin-top: -120px;
         margin-left: 10px;
-        margin-bottom: -20px;
+        margin-bottom: -80px;
     }
 
     .incorrect-score, #incorrect-number {
         font-size: 35px;
         text-align: right;
-        margin-top: -20px;
-        margin-left: 10px;
+        margin-top: 20px;
+        margin-right: 5px;
         margin-bottom: -20px;
     }
 
@@ -230,6 +235,26 @@ body {
 }
 
 @media (max-width: 768px) {
+
+    .quiz-area {
+        height: 75vh;
+        margin-top: 55px;
+    }
+
+    .correct-score, #correct-number {
+        font-size: 30px;
+        margin-top: -120px;
+        margin-left: 10px;
+        margin-bottom: -80px;
+    }
+
+    .incorrect-score, #incorrect-number {
+        font-size: 30px;
+        margin-top: 30px;
+        margin-right: 5px;
+        margin-bottom: -20px;
+    }
+
     #start-btn {
         font-size: 1.9rem;
         margin-top: 50px;
@@ -246,8 +271,9 @@ body {
 
 @media (max-width: 635px) {
     .logo {
-        height: 80px;
-        width: 210px;
+        height: 120px;
+        width: 250px;
+        margin-bottom: -5px;
     }
 
     .quiz-area {
@@ -255,13 +281,15 @@ body {
     }
 
     #correct-number, .correct-score {
+        text-align: left;
         font-size: 25px;
-        margin-top: 5px;
+        margin-top: -50px;
     }
 
     #incorrect-number, .incorrect-score {
+        text-align: right;
         font-size: 25px;
-        margin-top: 5px;
+        margin-top: 35px;
     }
 
     .score {
@@ -292,6 +320,16 @@ body {
         font-size: 1.5rem;
         padding: 10px 20px;
         margin-top: 15px;
+    }
+}
+
+@media (max-width: 425px) {
+    #correct-number, .correct-score {
+        margin-top: 15px;
+    }
+
+    #incorrect-number, .incorrect-score {
+        margin-top: 40px;
     }
 }
 
