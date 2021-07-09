@@ -28,7 +28,7 @@ body {
 
 .incorrect-score, #incorrect-number {
     font-size: 75px;
-    margin: -100px 25px 10px 10px;
+    margin: -120px 25px 10px 10px;
     text-align: right;
 }
   
