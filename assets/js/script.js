@@ -20,12 +20,12 @@ function startQuiz() {
     document.getElementById('welcome-message').style.display = 'none';
     document.getElementById('question').style.display = 'block';
 
-    generateFirstQuestion(questionCounter);
+    generateQuestion(questionCounter);
     
 }
 startButton.addEventListener('click', startQuiz);
 
-function generateFirstQuestion(questionCounter) {
+function generateQuestion(questionCounter) {
     questionContainer.innerHTML = questionSelection[questionCounter].question;
     buttonA.innerHTML = questionSelection[questionCounter].answer[0];
     buttonB.innerHTML = questionSelection[questionCounter].answer[1];
@@ -51,9 +51,10 @@ function generateNextQuestion() {
                 console.log('Message 2');
                 document.getElementById('closing-message-2').style.display = 'block';
              }
+          ;
           
         }
-    generateFirstQuestion(questionCounter);
+    generateQuestion(questionCounter);
     clearCorrectColor();
 }
 
