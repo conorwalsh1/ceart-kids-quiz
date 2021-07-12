@@ -8,6 +8,12 @@ const buttonD = document.getElementById('btn--d');
 
 var questionCounter = 0;
 
+/**
+ * This function will start the quiz by removing the welcome message
+ * and replacing it with questions and answers and by replacing the 
+ * 'Start Quiz' button with a 'Next' button.
+ */
+
 function startQuiz() {
     console.log('The quiz has started!');
     var btnGrid = document.getElementsByClassName('btn-grid');
@@ -24,6 +30,11 @@ function startQuiz() {
 }
 startButton.addEventListener('click', startQuiz);
 
+/**
+ * This function will populate the questions and their subsequent set 
+ * of answers each time it is called.
+ */
+
 function generateQuestion(questionCounter) {
     questionContainer.innerHTML = questionSelection[questionCounter].question;
     buttonA.innerHTML = questionSelection[questionCounter].answer[0];
@@ -31,6 +42,16 @@ function generateQuestion(questionCounter) {
     buttonC.innerHTML = questionSelection[questionCounter].answer[2];
     buttonD.innerHTML = questionSelection[questionCounter].answer[3];
  }
+
+ /**
+  * This function will generate the next question and set of answers once the 
+  * 'Next' button is clicked. It will increment by one each time until it reaches 
+  * 10 which is the amount of questions in the quiz. Once the quiz has ended, it 
+  * clears the questions and answer buttons and displays a closing message to allow
+  * the user know that the quiz has ended. By clicking the 'Next' button, the colour
+  * that shows for when an answer is either correct or incorrect will clear whilst
+  * the question is subsequently loaded.
+  */
 
 function generateNextQuestion() {
     console.log('Next question loaded');
@@ -52,6 +73,15 @@ function generateNextQuestion() {
 
 nextButton.addEventListener('click', generateNextQuestion);
 
+/**
+ * This function detects whether the user has clicked the right answer or not. 
+ * It does this by comparing the answer button the user clicks with the 
+ * correct answer set in the questionSelection variable. If the user is 
+ * correct, the button selected will turn green and the 'Correct' score tally
+ * will increment by one, whilst if they are incorrect, the button will turn 
+ * red and the 'Incorrect' score tally will increment by one.
+ */
+
 function correctAnswer(e) {
     let selectedButton = e.target;
     var theAnswer = questionSelection[questionCounter].correct;
@@ -72,6 +102,13 @@ buttonB.addEventListener('click', correctAnswer);
 buttonC.addEventListener('click', correctAnswer);
 buttonD.addEventListener('click', correctAnswer);
 
+/**
+ * This function is called within the generateNextQuestion function
+ * when a user clicks the "Next" button. It will reset the colour 
+ * of the button or buttons selected before the next set of questions and 
+ * answers load.
+ */
+
 function clearCorrectColor() {
     document.getElementById('btn--a').style.backgroundColor = "white";
     document.getElementById('btn--b').style.backgroundColor = "white";
@@ -79,10 +116,22 @@ function clearCorrectColor() {
     document.getElementById('btn--d').style.backgroundColor = "white";
 }
 
+/**
+ * This function increments the Correct score tally by 1 if the
+ * user clicks the correct answer. It was taken from the 'Love Maths'
+ * walkthrough project.
+ */
+
 function incrementScore() {
     let oldScore = parseInt(document.getElementById("correct-number").innerText);
     document.getElementById("correct-number").innerText = ++oldScore;
 }
+
+/**
+ * This function increments the Incorrect score tally by 1 if the
+ * user clicks the incorrect answer or answers. It was taken from the 'Love Maths'
+ * walkthrough project.
+ */
 
 function incrementIncorrectScore() {
     let wrongScore = parseInt(document.getElementById("incorrect-number").innerText);
