@@ -4,9 +4,9 @@
 
 ---
 
-[Live Website](https://conorwalsh1.github.io/Portfolio-Project-1/)
+[Live Website](https://conorwalsh1.github.io/ceart-kids-quiz/)
 
-[Github Repository](https://github.com/conorwalsh1/Portfolio-Project-1)
+[Github Repository](https://github.com/conorwalsh1/ceart-kids-quiz)
 
 ---
 
