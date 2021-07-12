@@ -47,7 +47,7 @@ body {
       
 }
   
-#welcome-message, #closing-message-1 {
+#welcome-message, #closing-message {
     margin: 95px 10px 290px 10px;
     text-align: center;
     font-size: 75px;
@@ -146,7 +146,7 @@ body {
         height: 75vh;
     }
     
-    #welcome-message, #closing-message-1, #closing-message-2 {
+    #welcome-message, #closing-message {
         margin: 65px 10px 60px 10px;
         font-size: 40px;
     }
@@ -199,7 +199,7 @@ body {
         margin-bottom: -20px;
     }
 
-    #welcome-message, #closing-message-1, #closing-message-2 {
+    #welcome-message, #closing-message {
         margin: 65px 10px 60px 10px;
         font-size: 30px;
     }
@@ -288,7 +288,7 @@ body {
         margin-left: 30px;
     }
 
-    #welcome-message, #closing-message-1, #closing-message-2 {
+    #welcome-message, #closing-message {
         font-size: 27px;
         margin-top: 20px;
     }
@@ -326,7 +326,7 @@ body {
 }
 
 @media (max-width: 375px) {
-    #welcome-message, #closing-message-1, #closing-message-2 {
+    #welcome-message, #closing-message {
         font-size: 20px;
     }
 

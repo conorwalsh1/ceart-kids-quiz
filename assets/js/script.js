@@ -64,7 +64,7 @@ function generateNextQuestion() {
         document.getElementById('btn--b').style.display = 'none';
         document.getElementById('btn--c').style.display = 'none';
         document.getElementById('btn--d').style.display = 'none';
-        document.getElementById('closing-message-1').style.display = 'block';
+        document.getElementById('closing-message').style.display = 'block';
         return;
     }
     generateQuestion(questionCounter);
