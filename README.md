@@ -1,38 +1,6 @@
-https://www.digitalocean.com/community/tutorials/how-to-add-a-favicon-to-your-website-with-html favicon link code copied from here
-
-https://www.youtube.com/watch?v=pA8103S-yqk to add favicon to site, it was not made clear through love maths project
-
-https://stackoverflow.com/questions/2573979/force-page-reload-with-html-anchors-html-js add refresh feature once logo is clicked
-
-https://stackoverflow.com/questions/11404744/css-media-queries-max-width-or-max-height used to set media query screen height
-
-I came across bug cannot set property display of underfined displaying buttons, found info on https://stackoverflow.com/questions/12194435/cannot-set-property-display-of-undefined
-
-
-Created logo using https://logomakr.com/
-
-Google fonts
-
-https://www.youtube.com/watch?v=MLfAW55_4cY - followed first half of video to apply hover overlays to buttons
-
-https://www.w3schools.com/cssref/pr_border-style.asp to remove border
-
-script.js:25 Uncaught TypeError: Cannot read property 'question' of undefined
-    at showQuestion (script.js:25)
-    at setNextQuestion (script.js:21)
-    at HTMLButtonElement.startQuiz (script.js:15)
-
-https://www.youtube.com/watch?v=riDzcEQbX6k - set up quiz
-
-
-
-
-
-
-
 <h1 align="center">CEART - IRISH QUIZ FOR KIDS</h1>
 
-![Responsive Test](assets/images/ms1-responsive-test.png)
+![Responsive Test](assets/images/ceart-responsive.png)
 
 ---
 
@@ -145,88 +113,78 @@ This website was built using a Macbook Pro 13".
 
 1. [Google Fonts:](https://fonts.google.com/)
     - Google fonts were used to import the 'Coming Soon' font into the style.css file which is used throughout the body of the project.
-1. [Balsamiq:](https://fontawesome.com/)
+2. [Balsamiq:](https://fontawesome.com/)
     - Balsamiq was used to draft up the wireframes for the project which helped me visualise what I wanted to achieve.
-1. [Git](https://git-scm.com/)
+3. [Git](https://git-scm.com/)
     - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
-1. [GitHub:](https://github.com/)
+4. [GitHub:](https://github.com/)
     - GitHub is used to store the projects code after being pushed from Git.
-1. [Logo Makr:](https://logomakr.com/)
+5. [Logo Makr:](https://logomakr.com/)
     - Logo Makr was used to create the Ceart logo which included the green map of Ireland.
-1. [Responsive Design:](http://ami.responsivedesign.is/)
+6. [Responsive Design:](http://ami.responsivedesign.is/)
     - Responsive design was used to create responsive design imitator image.
 
 
 ## Testing
 
-The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
+The W3C Markup Validator, W3C CSS Validator and JSHint were used to validate every page of the project to ensure there were no syntax errors in the project.
 
 -   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
 -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
+-   [JSHint](https://https://jshint.com/)
 
 ### Testing User Stories from User Experience (UX) Section
 
 -   #### First Time Visitor Goals
 
-    1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the organisation.
+    1. As a First Time Visitor, I want to easily understand the main purpose of the site..
 
-        1. Upon entering the site, users are automatically greeted with a clean and easily readable navigation bar to go to the page of their choice. Underneath there is a a minimalist image of the 'Rock'.
-        2. The main points are made immediately with the the nav bar at the top of the page and the landing image below.
-        3. The user has two options, click on the nav links or scroll down, both of which will lead to the same place, to learn more about the 'Rock of Cashel'.
+        1. Upon entering the site, users are automatically greeted with a clean unobstructed interface which contains the name of the site and a welcome message explaining the sites purpose.
+        2. The rules of the quiz are explained clearly.
+        3. The user is shown a large "Start Quiz" button which calls the function to start the quiz
 
-    2. As a First Time Visitor, I want to be able to easily be able to navigate throughout the site to find content.
+    2. As a First Time Visitor, I want to be able to easily be able to navigate through the quiz without any confusion.
 
-        1. The site has been designed to be fluid and never to entrap the user. At the top of each page there is a clean navigation bar, each link describes what the page they will end up at clearly.
-        2. The nav bar being fixed ensures the user always has somewhere to go and doesn't feel trapped as they get to the bottom of the page.
+        1. The site has been designed to be fluid and never to entrap the user. Once the quiz starts, the user will have an option of four different buttons to select, all of which can be pressed for each question. The 'Next' button guides the user through the quiz until they have answered all questions
+        2. The user will be alerted with a closing message once all questions have been answered.
 
-    3. As a First Time Visitor, I want to look for testimonials to understand what their users think of them and see if they are trusted. I also want to locate their social media links to see their following on social media to determine how trusted and known they are.
+    3. As a First Time Visitor, I want to have an experience that is meaningful and informative.
 
-        1. Once the new visitor has read the History and Visit Us, they will notice the Contact section.
-        2. At the bottom of the Contact Us page in the footer, the user is told that alternatively they can contact the organisation on social media which highlights the links to them.
+        1. The quiz has been set up in a way that the questions are not difficult but not easy either. As a first time visitor, I want to feel stimulated enough that I would like to return again.
+        2. The encouraging language in the opening and closing messages is scripted in a way that aims to provoke a positive emotional reaction in the site user.
 
 -   #### Returning Visitor Goals
 
-    1. As a Returning Visitor, I want to find information on the most recent photo competition.
+    1. As a Returning Visitor, I want to challenge the score I received on the previous occasion.
 
-        1. The competition link will always sit in the fixed header, meaning the site browser need never look far to gain access.
-        2. They will be directed to a separate page with a description on what event is ongoing, when voting is open and who can they contact for any further information required.
-        3. The pictures entered in the competition will be listed below.
+        1. The tally for correct and incorrect score will always appear at the top of the screen. It gives the visitor a way of tracking their score so they have something to compare it against when they return.
+        2. The score shows both correct and incorrect so the visitor has two ways of challenging themselves.
 
-    2. As a Returning Visitor, I want to find the best way to get in contact with the organisation with any questions I may have.
+    2. As a Returning Visitor, I want to be able to complete the quiz without any distractions
 
-        1. The navigation bar clearly highlights the "Contact" Page.
-        2. Here they can gather our phone number and email or are told that alternatively they can message the organisation on social media.
-        3. The footer contains links to the organisations Facebook, Twitter, Instagram and Youtube pages.
-        4. Whichever link they click, it will be open up in a new tab to ensure the user can easily get back to the website.
-        5. The email button is set up to automatically open up your email app and autofill there email address in the "To" section.
-
-    3. As a Returning Visitor, I want to find the Facebook link so that I can join and interact with others in the community.
-        1. The Facebook Page can be found at the footer of every page and will open a new tab for the user and more information can be found on the Facebook page.
+        1. The quiz is set up in a way that the visitors eyes are only drawn to the quiz area which is contained in a black box with brown border.
+        2. There is nothing included on the site that isn't necessary which promotes a concentrated learning environment.
 
 -   #### Frequent User Goals
 
-    1. As a Frequent User, I want to check to see if there are any new details about the photo competition.
+    1. As a Frequent User, I want to improve my Irish language skills.
 
-        1. The user would already be comfortable with the website layout and can easily click the banner message.
+        1. The site has a familiar layout which is truly unique. This allows the site visitor to focus purely on learning Irish through the quiz.
 
-    2. As a Frequent User, I want to check to see if there are any changes in admission prices or opening times.
+    2. As a Frequent User, I want to check to see if there are any changes to either the questions in terms of topics or difficulties.
 
-        1. The user would already be comfortable with the website layout and can easily click the Visit Us link
+        1. If any changes were to be implemented either through topics or question difficulties, the user would be notified in the welcome message so the landing page acts as a notice board for any changes on site.
 
 ### Further Testing
 
 -   The Website was tested on Google Chrome, Internet Explorer, and Safari browsers.
--   The website was viewed on a variety of devices such as Desktop, Laptop, iPad, iPhone7, & iPhoneX.
+-   The website was viewed on a variety of devices such as Desktop, Laptop, Samsung 4K Television, iPad, iPhone 7 (Regular and Plus), & iPhoneX.
 -   A large amount of testing was done to ensure that all pages were linking correctly.
 -   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
 ### Known Bugs
 
--   When the nav bar is opened through the collapsible burger icon on iPhones and iPad, the links for History, Visit Us and Contact divs will bring the user to the relevant part of the site, however they must close the drop down using the "X" icon on the top right of the page to display the information as requested. The issue does not effect Home or Competition links.
-
--   When tested on an iPhone 7, the social media links tend to float to the right, even though there is no rule to state such. This problem does not appear when testing responsiveness using Chrome Dev Tools.
-
--   No errors when HTML and CSS are ran through respective WS3 validators.
+-   There are no known bugs at this moment in time.
 
 ## Deployment
 
@@ -280,48 +238,36 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### Code
 
--   [CSS Tricks](https://css-tricks.com/all-about-mailto-links/) : I wanted to have it so when you click on the email in the Contact section it opened a new email with the Rock of Cashel email already named as the recipient, so I followed this tutorial to achieve desired effect.
+-   [Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-add-a-favicon-to-your-website-with-html) : I copied the template code on this site so that my favicon would work correctly.
 
--   [Stack Overflow](https://stackoverflow.com/questions/29451382/navigation-bar-being-hidden-behind-pics) : I found my fixed nav bar kept disappearing behind images as I scrolled through page. Searched online and found this link which recommended setting z-index to a high figure which solved problem.
+-   [Stack Overflow](https://stackoverflow.com/questions/2573979/force-page-reload-with-html-anchors-html-js) : I wanted to force a page reload once the logo was clicked and I acheived this using information here.
 
--   [YouTube](https://www.youtube.com/watch?v=S-JyJCVx_4Y) : Followed first part of tutorial using the video linked to figure out how to add fixed nav bar. I tried to follow the video futher as I wanted to create a burger icon to shrink the menu when the screen size was reduced but after multiple attempts I had to give up as it was not turning out like the video and was taking up a lot of time.
+-   [Stack Overflow](https://stackoverflow.com/questions/12194435/cannot-set-property-display-of-undefined) : I came across a bug stating "Cannot set display of undefined" in Dev tools. I followed an approach here to eradicate the issue.
 
--   [YouTube](https://www.youtube.com/watch?v=AkK8yHC4TlI) : Though I spent a lot of time earlier on trying to find a way to make the burger icon work, I felt it would really help the flow of the site as I had four nav anchors which took up a lot of space once site was displayed on smaller screen sizes, so I followed this tutorial, persevered and managed to get it working.
+-   [YouTube](https://www.youtube.com/watch?v=MLfAW55_4cY) : I followed the first part of this tutorial to acheive the desired effect of a hover olay for my buttons.
 
--   [YouTube](https://www.youtube.com/watch?v=exb2ab72Xhs) : Followed tutorial here to acheive hover transition effect when mouse placed over tapestry image but later discarded the effect as I found it difficult to maintain effect upon responsive shrinking and felt it was superflous as time went on and I was spending far too much time striving for a relatively unnoticeable effect.
+-   [W3Schools](https://www.w3schools.com/cssref/pr_border-style.asp) : I used this site as I was looking to remove a border style that was appearing dotted when I just wanted a simple plain border.
 
--   [Brand Palettes](https://brandpalettes.com/) : I acquired accurate colors for social media icons from Brand Palettes.
-
--   [Computer Hope](https://www.computerhope.com/issues/ch000049.htm) : Added internal nav link for history nav bar at top of page using information sourced from link above.
-
--   [The University of Vermont](https://www.uvm.edu/~bnelson/computer/css/wrappingtextaroundimages.html) : I struggled to wrap the text around the picture in the 'History' section but found relevant information through link above.
-
--   [Bootstrap4](https://getbootstrap.com/docs/4.4/getting-started/introduction/): Bootstrap Library used throughout the project mainly to make site responsive using the Bootstrap Grid System.
-
--   [MDN Web Docs](https://developer.mozilla.org/) : For Pattern Validation code. Code was modified to better fit my needs and to match an Irish phone number layout to ensure correct validation. Tutorial Found [Here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/tel#Pattern_validation)
+- My functions incrementScore and incrementIncorrectScore were taken from the 'Love Maths' walkthrough, I just replaced the Id's with my own.
 
 ### Problems Overcame
 
--   As mentioned above, once I had completed everything else on the site I was left unsatisfied after numerous attempts of playing with the code. I could not get the burger item to display the drop down nav list vertically. In the video I mentioned to get to that point, the coder used display: block to align the nav links vertically, but it would not work the same on my system. I decided to give it one more attempt to fix it as it was the only part of the project I was left unsatisfied with. 
+-   I found Javascript quite tough initially. When I started the project I relied heavily on a Youtube tutorial (https://www.youtube.com/watch?v=riDzcEQbX6k&t=1374s) which created a multiple choice quiz exactly how I wanted it to look but I could not explain how any of the Javascript functions worked. I spoke with my tutor Maria who advised that the Javascript code must be custom written. I deleted the project and went back to the start of the Javascript course and I went through the modules again, this time bookmarking parts I realised I could use in my own project and thereby gaining a better understanding of JS. By the time I came through the JS module, I felt much more prepared and I started writing my own custom JS. You will be able to see in the commits where I deleted the JS code and started afresh.
 
-    I used Chrome Dev Tools to play around with different display attributes and found that 'grid' alligned the nav list vertically, but the spacing was too far apart and it was inverted. I then tried display flex which seemed to work better. It also gave me options such as flex direction and justify content to play around with and I was able to obtain the desired layout. I then tweaked the line height and list margin until I alligned the list in the desired. I had to walk away from the issue multiple times left frustrated but I was glad to have over come this issue as it really tidies up the flow of the site.
+One function I had a lot of trouble with was the correctAnswer function. I spent a number of days working different angles but I was delighted to get it working in the end.
+
+
 
 ### Content
-
--   [Heritage Ireland](https://heritageireland.ie/places-to-visit/rock-of-cashel/) : History paragraph taken from this link.
 
 -   Code Institute README.md template.
 
 -   All other content was written by Conor Walsh.
 
 
-### Media
-
--   All Images were taken from [Google Images](https://www.google.com/imghp?hl=EN)
-
 ### Acknowledgements
 
--   I would like to thank my mentor Maria Hynes for guiding me along the right path throughout our mentoring sessions. There were times I struggled with getting the way I wanted the code to look out of my head and onto the screen, but she gave me great motivation to persevere and I am very grateful for her assistance. 
+-   I would like to thank my mentor Maria Hynes for guiding me along the right path throughout our mentoring sessions. There were times I struggled with getting the way I wanted the code to look out of my head and onto the screen, but she gave me great motivation to persevere and I am very grateful for her assistance. I would also like to thank the tutors that helped me along the way.
 
 
 
