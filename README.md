@@ -14,11 +14,11 @@
 
 Welcome to Ceart (Ceart is the Irish translation of the word 'Correct'), an online multiple choice quiz for kids that tests their knowledge of the Irish language. I set out to create a quiz that is both easy to navigate and clear in it's intent.
 
-As most people who learn the Irish language do so when they are a child, I prioritised a landing page which welcomes the site visitor using clear and easy to read English in a small paragraph with a large button that reads "Start Quiz". The welcome message informs the user that they have ten questions to answer and it also encourages the user to try again, even if they are not right the first time. Once the start quiz button is pressed, the welcome message will disappear and the quiz will begin. 
+As most people who learn the Irish language do so when they are a child, I prioritised a landing page which welcomes the site visitor using clear and easy to read English in a small paragraph with a large button that reads "Start Quiz". The welcome message informs the user that they have ten questions to answer and it also encourages the user to try again if they answer incorrectly. Once the start quiz button is clicked, the welcome message will disappear and the quiz will begin. 
 
 The site user will be asked a question at the top of the screen under which they will have four buttons with each button containing a possible answer. If the correct button is clicked, the button selected will turn green and the "Correct" score tracker will increment by 1, however if they choose incorrectly, the button selected will turn red and the "Incorrect" score tracker will increment by 1 for each wrong answer selected
 
-The quiz is comprised of a total of ten questions with each question being labelled with a number to show the user where they stand in terms of total questions remaining. Once the tenth question has been answered, the quiz area will be cleared of questions and answer buttons and a closing message will inform the user that they have reached the end of the quiz. The closing message will congratulate them on completing the quiz and will ask them how they fared. The user will be informed that if they would like to restart they quiz, they need only click on the little green map of Ireland thaat remains at the top of the page. Their final scores will be stored at the top of the page, showing how many answers they were correct and how many were incorrect.
+The quiz is comprised of a total of ten questions with each question being labelled with a number to show the user where they stand in terms of total questions remaining. Once the tenth question has been answered, the quiz area will be cleared of questions and answer buttons and a closing message will inform the user that they have reached the end of the quiz. The closing message will congratulate them on completing the quiz and will ask them how they fared. The user will be informed that if they would like to restart they quiz, they need only click on the little green map of Ireland thaat remains at the top of the page in the logo. Their final scores will be stored at the top of the page, showing how many answers they got correct and how many were answered incorrectly.
 
 This website was built using a Macbook Pro 13". 
 
@@ -47,13 +47,13 @@ This website was built using a Macbook Pro 13".
     -   #### Colour Scheme
         -   The main colours used are grey, green, orange, black, brown and red. I used a black square with a brown boarder to create what looks like a blackboard that teachers use in Irish classrooms to make the site user feel like they are in a learning environment. I used a grey background so this blackboard would pop against it. I used the colour green for both the map of Ireland in the logo, favicon and as a transition effect if the correct answer is selected. I used white for the button backgrounds and for the writing on the blackboard. I used black for writing inside the buttons and outside the quiz area. I used red as a transition effect if the icorrect answer is selected. I used the colour combination of green, white and orange to symbolise Ireland.
     -   #### Typography
-        -   The Coming Soon font is used throughout the body with the only expection being that Arial ised used in the buttons as it makes them look more crisp and easy to read. I chose Coming Soon as I wanted to have a font that resembled handwriting on the blackboard that would be done in chalk in a standard classroom. I feel it works very effectively. I also chose to use it for the correct and incorrect scores as it is laidback and child friendly. I chose Arial for all the buttons as it clear for the user when they want to make a decision on what the answer is.
+        -   The 'Coming Soon' font is used throughout the body with the only expection being that Arial ised used inside the buttons as it makes them look more crisp and easy to read. I chose 'Coming Soon' as I wanted to have a font that resembled handwriting on the blackboard that would be done in chalk in a standard classroom. I feel it works very effectively. I also chose to use it for the correct and incorrect scores as it is laidback and child friendly. I chose Arial for all the buttons as it clear for the user when they want to make a decision on what the answer is.
     -   #### Imagery
-        -   Imagery does not play a part on this site currently. It is a future feature that could be added to the questions. Though not technically an image, there is a map of Ireland in the logo what was created using an external logo creator called https://logomakr.com/. The quiz area blackboard does act like an image as it holds all information about the quiz within it but is not technically an image. The only images that appear in the images folders are that of the favicon, the logo and the responsibve test.
+        -   Imagery does not play a part on this site currently. It is a future feature that could be added to the questions. Though not technically an image, there is a map of Ireland in the logo what was created using an external logo creator called https://logomakr.com/. The quiz area blackboard does act like an image as it holds all information about the quiz within it but is not technically an image. The only images that appear in the images folders are that of the favicon, the logo, the wireframes and the responsibve test.
 
 *   ### Wireframes
 
-    -   I chose to use Balsamiq Wireframes to sketch out how I hoped for the site to look. I will post three pictures below, showing how I wanted the start of the quiz, the quiz questions and the end of the quiz to appear.
+    -   I chose to use Balsamiq Wireframes to plan out how I hoped for the site to look. I will post three pictures below, showing how I wanted the start of the quiz, the quiz questions and the end of the quiz to appear.
 
     <h2 align="center">Start of Quiz</h2>
 
@@ -78,8 +78,6 @@ This website was built using a Macbook Pro 13".
 
 -   Accessibility has been added in terms of both aria labels and aria labelled by to ensure the site is usable for anyone using screen readers.
 
--   Icons imported from Font Awesome and applied where necessary (e.g applied to all list items under Visit Us and Contact divs).
-
 -   The 'Next' button toggles through questions until there are no questions left to display, at which point the closing message appears on screen.
 
 -   Ten seperate questions with different answers. If the correct answer is selected, button turns green. If incorrect button selected, button turns red.
@@ -94,12 +92,11 @@ This website was built using a Macbook Pro 13".
 
 -   Different topics of quiz questions, such as sport, history, geography.
 
--   Different variations of difficulty to keep site users coming back.
+-   Different variations of difficulty to keep site users coming back (perhaps images to accompany certain questions on an easier mode.).
 
 -   A highscore page that stores users names and scores.
 
 -   A timer so that players can test themselves to try and beat their previous times.
-
 
 ## Technologies Used
 
@@ -123,6 +120,9 @@ This website was built using a Macbook Pro 13".
     - Logo Makr was used to create the Ceart logo which included the green map of Ireland.
 6. [Responsive Design:](http://ami.responsivedesign.is/)
     - Responsive design was used to create responsive design imitator image.
+7. [Chrome DevTools:](https://developer.chrome.com/docs/devtools/)
+    - Used to test code throughout the project by using the console and by trying out different variations of code before settling on any type and implementing it into the project.
+
 
 
 ## Testing
@@ -179,12 +179,11 @@ The W3C Markup Validator, W3C CSS Validator and JSHint were used to validate eve
 
 -   The Website was tested on Google Chrome, Internet Explorer, and Safari browsers.
 -   The website was viewed on a variety of devices such as Desktop, Laptop, Samsung 4K Television, iPad, iPhone 7 (Regular and Plus), & iPhoneX.
--   A large amount of testing was done to ensure that all pages were linking correctly.
 -   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
 ### Known Bugs
 
--   There are no known bugs at this moment in time.
+-   There are no known bugs at this time.
 
 ## Deployment
 
@@ -248,13 +247,13 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 -   [W3Schools](https://www.w3schools.com/cssref/pr_border-style.asp) : I used this site as I was looking to remove a border style that was appearing dotted when I just wanted a simple plain border.
 
-- My functions incrementScore and incrementIncorrectScore were taken from the 'Love Maths' walkthrough, I just replaced the Id's with my own.
+- My functions incrementScore and incrementIncorrectScore were taken from the 'Love Maths' Code Institute walkthrough, I replaced the Id's with my own.
 
 ### Problems Overcame
 
 -   I found Javascript quite tough initially. When I started the project I relied heavily on a Youtube tutorial (https://www.youtube.com/watch?v=riDzcEQbX6k&t=1374s) which created a multiple choice quiz exactly how I wanted it to look but I could not explain how any of the Javascript functions worked. I spoke with my tutor Maria who advised that the Javascript code must be custom written. I deleted the project and went back to the start of the Javascript course and I went through the modules again, this time bookmarking parts I realised I could use in my own project and thereby gaining a better understanding of JS. By the time I came through the JS module, I felt much more prepared and I started writing my own custom JS. You will be able to see in the commits where I deleted the JS code and started afresh.
 
-One function I had a lot of trouble with was the correctAnswer function. I spent a number of days working different angles but I was delighted to get it working in the end.
+One function I had a lot of trouble with was the correctAnswer function. I spent a number of days working different angles but I was delighted to get it working in the end. What I figured out was that I was missing was the event parameter within the function itself.
 
 
 

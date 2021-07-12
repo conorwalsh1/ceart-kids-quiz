@@ -1,20 +1,13 @@
 const startButton = document.getElementById('start-btn');
 const questionContainer = document.getElementById('question');
-const welcomeMessage = document.getElementById('welcome-message');
-const closingMessage = document.getElementById('closing-message-1');
-const answerButtons = document.getElementById('answer-buttons');
 const nextButton = document.getElementById('next-btn');
 const correctNumber =document.getElementById('correct-number');
-const incorrectNumber =document.getElementById('incorrect-number');
 const buttonA = document.getElementById('btn--a');
 const buttonB = document.getElementById('btn--b');
 const buttonC = document.getElementById('btn--c');
 const buttonD = document.getElementById('btn--d');
 
-var score = 0;
-let i = 0;
 var questionCounter = 0;
-var questLength = questionCounter.length;
 
 function startQuiz() {
     console.log('The quiz has started!');
@@ -33,15 +26,10 @@ function startQuiz() {
 startButton.addEventListener('click', startQuiz);
 
 function generateFirstQuestion(questionCounter) {
-    let firstQuestion = questionSelection[questionCounter];
     questionContainer.innerHTML = questionSelection[questionCounter].question;
-    let firstAnswerA = questionSelection[questionCounter];
     buttonA.innerHTML = questionSelection[questionCounter].answer[0];
-    let firstAnswerB = questionSelection[questionCounter];
     buttonB.innerHTML = questionSelection[questionCounter].answer[1];
-    let firstAnswerC = questionSelection[questionCounter];
     buttonC.innerHTML = questionSelection[questionCounter].answer[2];
-    let firstAnswerD = questionSelection[questionCounter];
     buttonD.innerHTML = questionSelection[questionCounter].answer[3];
  }
 
