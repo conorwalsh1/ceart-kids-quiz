@@ -14,8 +14,8 @@
     <!-- Header containing custom logo, correct and incorrect scores -->
 
     <header>
-        <img class="logo" src="assets/images/ceart-logo.png" alt="logo" onclick="location.reload()">
-        <div class="score-div">
+        <img class="logo" src="assets/images/ceart-logo.png" alt="ceart-logo" aria-label="ceart logo with a small green map of Ireland" onclick="location.reload()">
+        <div class="score-div" aria-labelledby="correct-number incorrect-number">
             <p class="correct-score">Correct: <span id="correct-number">0</span></p>
             <p class="incorrect-score">Incorrect: <span id="incorrect-number">0</span></p>
         </div>
@@ -23,7 +23,7 @@
 
     <!-- Quiz area which stores questions and buttons relating to answers, start quiz and next question -->
 
-    <div class="quiz-area">
+    <div class="quiz-area" aria-labelledby="welcome-message closing-message-1 closing-message-2 question answer-buttons btn--a btn--b btn--c btn--d">
         <div id="welcome-message">Welcome to Ceart, an online quiz platform for kids! Test your Irish language skills! You have ten questions to answer, if you get one wrong don't worry, just try again! Best of luck!</div>
         <div id="closing-message-1" class="hide">Congratulations on completing the quiz! Fantastic effort! What did you score? If you would like to try to beat that score, click the little green map of Ireland above to restart the quiz! Slán go fóill!</div>
         <div id="closing-message-2" class="hide">Congratulations on completing the quiz! You did okay, but you can do much better! What did you score? If you would like to try to beat that score, click the little green map of Ireland above to restart the quiz! Slán go fóill!</div>
@@ -34,7 +34,7 @@
             <button id="btn--c" class="btn btn--c"></button>
             <button id="btn--d" class="btn btn--d"></button>
         </div>
-        <div class="controls">
+        <div class="controls" aria-labelledby="start-btn next-btn">
         <button id="start-btn" class="start-btn btn">Start Quiz</button>
         <button id="next-btn" onclick="clearCorrectColor" class="next-btn btn hide">Next</button>
         </div>
