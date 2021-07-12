@@ -127,7 +127,7 @@ body {
     background-color: rgb(255, 123, 0);
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 2400px) {
     .logo {
         height: 140px;
         width: 320px;

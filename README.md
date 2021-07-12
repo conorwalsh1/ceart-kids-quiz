@@ -79,51 +79,58 @@ This website was built using a Macbook Pro 13".
     -   #### Colour Scheme
         -   The main colours used are grey, green, orange, black, brown and red. I used a black square with a brown boarder to create what looks like a blackboard that teachers use in Irish classrooms to make the site user feel like they are in a learning environment. I used a grey background so this blackboard would pop against it. I used the colour green for both the map of Ireland in the logo, favicon and as a transition effect if the correct answer is selected. I used white for the button backgrounds and for the writing on the blackboard. I used black for writing inside the buttons and outside the quiz area. I used red as a transition effect if the icorrect answer is selected. I used the colour combination of green, white and orange to symbolise Ireland.
     -   #### Typography
-        -   The Amiri font is used for any headers or titles whilst Open Sans is the main font used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. Amiri and Open Sans are both distinguished and legible fonts, Amiri being extremely effective in titles as it has an elegant charm.
+        -   The Coming Soon font is used throughout the body with the only expection being that Arial ised used in the buttons as it makes them look more crisp and easy to read. I chose Coming Soon as I wanted to have a font that resembled handwriting on the blackboard that would be done in chalk in a standard classroom. I feel it works very effectively. I also chose to use it for the correct and incorrect scores as it is laidback and child friendly. I chose Arial for all the buttons as it clear for the user when they want to make a decision on what the answer is.
     -   #### Imagery
-        -   Imagery is a key component of my sites make up. The landing image shows the 'Rock of Cashel' in all of it's glory with the contrast of the grey really popping against the green grass. Futher down the site I use two images that cover the page fully in width but only about a third of the page in height. They act as dividing images to break the flow of the page. They both harbour warm colors which trigger a positive emotional reaction in the site user. I chose the second divider image set above the 'Contact' div specifically as it shows the 'Rock' at sunset, illustrating to the site browser that they are reaching the end of the page. 
-        
-            I created a second page on the site under the 'Competition' link in the navigation bar which is made up mostly of imagery. The link will bring the site user to the results page of a seasonaly run photo competition where members of the public vote on what they believe is the most impressive picture submitted and the competition winner is allocated a prize of €250. Imagery is an important part of the website as these exquisite images show how colossal the Rock is, reminiding locals who have grown accustomed to living in the shadow of the Rock how lucky they are to live so close to it, whilst encouraging tourists from both within and outside Ireland to come visit to see it in all its majesty for themselves.
+        -   Imagery does not play a part on this site currently. It is a future feature that could be added to the questions. Though not technically an image, there is a map of Ireland in the logo what was created using an external logo creator called https://logomakr.com/. The quiz area blackboard does act like an image as it holds all information about the quiz within it but is not technically an image. The only images that appear in the images folders are that of the favicon, the logo and the responsibve test.
 
 *   ### Wireframes
 
-    -   I chose to sketch the layout of the site using paper and pencil and made adjustments along the way.
+    -   I chose to use Balsamiq Wireframes to sketch out how I hoped for the site to look. I will post three pictures below, showing how I wanted the start of the quiz, the quiz questions and the end of the quiz to appear.
 
+    <h2 align="center">Start of Quiz</h2>
+
+    ![Start of Quiz](assets/images/wireframe-quiz-start.png)
+
+    <h2 align="center">Quiz Questions</h2>
+
+    ![Quiz Questions](assets/images/wireframe-quiz-question.png)
+
+    <h2 align="center">End of the Quiz</h2>
+
+    ![End of the Quiz](assets/images/wireframe-quiz-end.png)
+
+    
 ## Features
 
--   Responsive on all device sizes. On wider screens the navigation bar lists all different sections side by side, but once screen size is restricted, the nav links shrink into a burger icon which collapses when clicked and shows relevant links.
+-   Responsive on all device sizes. On wider screens the questions and buttons stretch out to make use of space but on smaller screens the media queries ensure the quiz is adaptive and clean
 
--   The navigation bar and logo within the header are fixed, meaning no matter how far the site user scrolls down  throughout the page, they can access any part of the web site at any time.
+-   Correct and Incorrect scores increment as according to users selecting the correct answer ot incorrect answer.
 
--   When hovered over, the navigation links display a black underline giving the site browser more clarity.
+-   When hovered over, the 'Start Quiz' and 'Next' buttons transition to orange to encourage user to click.
 
 -   Accessibility has been added in terms of both aria labels and aria labelled by to ensure the site is usable for anyone using screen readers.
 
 -   Icons imported from Font Awesome and applied where necessary (e.g applied to all list items under Visit Us and Contact divs).
 
--   History, Visit Us and Contact sections are located on the home page. Competition makes up a second seperate page.
+-   The 'Next' button toggles through questions until there are no questions left to display, at which point the closing message appears on screen.
 
--  Visit Us page hosts relevant admission prices, opening times and facilities on site. It also has Google Maps implemented through iframe, updated in real time.
+-   Ten seperate questions with different answers. If the correct answer is selected, button turns green. If incorrect button selected, button turns red.
 
--   Contact page hosts relevant phone number, geographical address and email address.
+-   Welcome message upon loading the quiz informing player how the quiz works.
 
--   The email address at the bottom of the page opens up into a new email when clicked, with the 'Rock of Cashel' listed as the intended recipient.
+-   Closing message upon completing the quiz congratulating the player, asking them how they scored and directing them to click the green map of Ireland in the logo if they would like to restart.
 
--   The footer contains links to social media sites, where site browsers can gain access to recent updates from 'The Rock of Cashel' tourist site.
-
--   Social media links have been colour coded with the exact RGB of each relevant site to ensure familiarty for the site browser.
-
--   Competition page hosts information about upcoming photo competitions in terms of when to enter by and when voting opens. It also hosts results from the most recent vote, showing the picture entered, who took the picture, how many votes the picture got and what percentage of the total number of votes the respective picture received.
+-   The green map of Ireland in the logo contains a link so that when it is clicked, it will refresh the page, thereby restarting the quiz.
 
 ## Features I Would Have Liked To Add
 
--   An auto scroll gallery of pictures on the landing page.
+-   Different topics of quiz questions, such as sport, history, geography.
 
--   A page for reviews on people who have come to visit the 'Rock'.
+-   Different variations of difficulty to keep site users coming back.
 
--   An online gift shop with merchandise crafted with the 'Rock' in mind.
+-   A highscore page that stores users names and scores.
 
--   Portal to book group tours with designated parking set up for large coaches and buses.
+-   A timer so that players can test themselves to try and beat their previous times.
 
 
 ## Technologies Used
@@ -132,19 +139,20 @@ This website was built using a Macbook Pro 13".
 
 -   [HTML5](https://en.wikipedia.org/wiki/HTML5)
 -   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+-   [Javascript](https://en.wikipedia.org/wiki/JavaScript)
 
 ### Frameworks, Libraries & Programs Used
 
 1. [Google Fonts:](https://fonts.google.com/)
-    - Google fonts were used to import the 'Amiri' font into the style.css file which is used on all pages throughout the project.
-1. [Font Awesome:](https://fontawesome.com/)
-    - Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
+    - Google fonts were used to import the 'Coming Soon' font into the style.css file which is used throughout the body of the project.
+1. [Balsamiq:](https://fontawesome.com/)
+    - Balsamiq was used to draft up the wireframes for the project which helped me visualise what I wanted to achieve.
 1. [Git](https://git-scm.com/)
     - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 1. [GitHub:](https://github.com/)
     - GitHub is used to store the projects code after being pushed from Git.
-1. [Google Maps:](https://www.google.com/maps)
-    - Google Maps was used to display information on how to get to the 'Rock of Cashel'.
+1. [Logo Makr:](https://logomakr.com/)
+    - Logo Makr was used to create the Ceart logo which included the green map of Ireland.
 1. [Responsive Design:](http://ami.responsivedesign.is/)
     - Responsive design was used to create responsive design imitator image.
 
