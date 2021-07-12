@@ -44,15 +44,15 @@ https://www.youtube.com/watch?v=riDzcEQbX6k - set up quiz
 
 # About
 
-I wanted to build a website for a tourist attraction in my local town, 'The Rock of Cashel'. The website is made to target both tourists and locals. To achieve this, I aimed to lay out the website in a clear and concise way. 
+Welcome to Ceart (Ceart is the Irish translation of the word 'Correct'), an online multiple choice quiz for kids that tests their knowledge of the Irish language. I set out to create a quiz that is both easy to navigate and clear in it's intent.
 
-As most visitors to the 'Rock of Cashel' would be tourists from out of town, I prioritised a landing page comprised of an impressive photo of the rock with a clear and simple navigation bar at the top alongside the header to steer site browsers in the right direction. The History section appears first when the user scrolls with a brief but thorough description of the Rocks' past which also includes an image of the rock from olden times. Following this is a 'Visit Us' section which includes an Google Maps iframe along with admission fees, opening times and facilities available on site. 
+As most people who learn the Irish language do so when they are a child, I prioritised a landing page which welcomes the site visitor using clear and easy to read English in a small paragraph with a large button that reads "Start Quiz". The welcome message informs the user that they have ten questions to answer and it also encourages the user to try again, even if they are not right the first time. Once the start quiz button is pressed, the welcome message will disappear and the quiz will begin. 
 
-At the bottom of the page I included all relevant contact information with all social media links included in the footer. I added two divider images, one under the History section of a tapestry and one under the Visit Us section. The image of the rock under the Visit Us section is taken at sunset which I felt was relevant as the visitor also approaches the end of the web page. The color scheme in both divider images are cohesive and they compliment eachother, whilst the landing page image is an impressive picture of the Rock with the predominantly grey and green offering a striking effect. 
+The site user will be asked a question at the top of the screen under which they will have four buttons with each button containing a possible answer. If the correct button is clicked, the button selected will turn green and the "Correct" score tracker will increment by 1, however if they choose incorrectly, the button selected will turn red and the "Incorrect" score tracker will increment by 1 for each wrong answer selected
 
-The competition page is pitched as a local photo competition for pictures of the rock. I added this to the end of the navigation bar as locals would make up a significantly less amount of visitors on the website. I also wanted to keep the main landing page kept exclusively for easily digestable information on the Rock itself.
+The quiz is comprised of a total of ten questions with each question being labelled with a number to show the user where they stand in terms of total questions remaining. Once the tenth question has been answered, the quiz area will be cleared of questions and answer buttons and a closing message will inform the user that they have reached the end of the quiz. The closing message will congratulate them on completing the quiz and will ask them how they fared. The user will be informed that if they would like to restart they quiz, they need only click on the little green map of Ireland thaat remains at the top of the page. Their final scores will be stored at the top of the page, showing how many answers they were correct and how many were incorrect.
 
-This website was built using a Macbook Pro 13". As it was my first project and subsequent first time creating a website, I was unaware of the benefits of using a second larger monitor to test the website upon deployment. My tutor has advised me on how important a second larger monitor is and I will use one for all my projects going forward.
+This website was built using a Macbook Pro 13". 
 
 ## User Experience (UX)
 
@@ -60,24 +60,24 @@ This website was built using a Macbook Pro 13". As it was my first project and s
 
     -   #### First Time Visitor Goals
 
-        1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the history of the 'Rock Of Cashel' whilst also understanding how to get there. I also want to know what facilities the location has to offer if I were to visit.
-        2. As a First Time Visitor, I want to be able to easily navigate throughout the site to find content.
-        3. As a First Time Visitor, I want to make sure all relevant contact information is available if required. I also want to locate their social media links to see their followings on social media to determine how trusted and known they are.
+        1. As a First Time Visitor, I want to easily understand the main purpose of the site and I want to feel encouraged to click the Start Quiz button and for the button to be clearly visible.
+        2. As a First Time Visitor, I want to be able to easily navigate throughout the site from the start of the quiz to the end.
+        3. As a First Time Visitor, I want to feel a sense of accomplishment in completing the quiz. I want to be able to see my result to see how good my Irish skills are.
 
     -   #### Returning Visitor Goals
 
-        1. As a Returning Visitor, I want to find the results for the seasonly photo competitions.
-        2. As a Returning Visitor, I want to find the best way to get in contact with the organisation with any questions I may have.
-        3. As a Returning Visitor, I want to find out what the current prcies are for admission and what times is the 'Rock of Cashel' open for visits and tours.
+        1. As a Returning Visitor, I want to be able to challenge myself to see if I can get a better score.
+        2. As a Returning Visitor, I want to have fun whilst also learning more about the Irish language.
+        3. As a Returning Visitor, I want to be able to navigate my way through the site with ease and without confusion.
 
     -   #### Frequent User Goals
-        1. As a Frequent User, I want to check to see the results for the photo competition in more detail, including amount of total votes and percentages on what entry generated the most votes.
-        2. As a Frequent User, I want to check to see if there are any changes to admission prices, opening times or facilities.
-        3. As a Frequent User, I want to see any new updates the site has posted through their social media links.
+        1. As a Frequent User, I want to check to see if my results are improving as time goes on, getting less incorrect answers and more correct.
+        2. As a Frequent User, I want to check to see if there are any new questions sorted by different topics or difficulty.
+        3. As a Frequent User, I want to feel that I am learning more about the Irish language as time goes on.
 
 -   ### Design
     -   #### Colour Scheme
-        -   The main colours used are grey, green, orange and blue.
+        -   The main colours used are grey, green, orange, black, brown and red. I used a black square with a brown boarder to create what looks like a blackboard that teachers use in Irish classrooms to make the site user feel like they are in a learning environment. I used a grey background so this blackboard would pop against it. I used the colour green for both the map of Ireland in the logo, favicon and as a transition effect if the correct answer is selected. I used white for the button backgrounds and for the writing on the blackboard. I used black for writing inside the buttons and outside the quiz area. I used red as a transition effect if the icorrect answer is selected. I used the colour combination of green, white and orange to symbolise Ireland.
     -   #### Typography
         -   The Amiri font is used for any headers or titles whilst Open Sans is the main font used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. Amiri and Open Sans are both distinguished and legible fonts, Amiri being extremely effective in titles as it has an elegant charm.
     -   #### Imagery
