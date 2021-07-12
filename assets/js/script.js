@@ -1,7 +1,6 @@
 const startButton = document.getElementById('start-btn');
 const questionContainer = document.getElementById('question');
 const nextButton = document.getElementById('next-btn');
-const correctNumber =document.getElementById('correct-number');
 const buttonA = document.getElementById('btn--a');
 const buttonB = document.getElementById('btn--b');
 const buttonC = document.getElementById('btn--c');
@@ -36,24 +35,17 @@ function generateQuestion(questionCounter) {
 function generateNextQuestion() {
     console.log('Next question loaded');
     questionCounter++;
-      if (questionCounter == 10) {
-          console.log('Quiz End');
-          document.getElementById('question').style.display = 'none';
-          document.getElementById('next-btn').style.display = 'none';
-          document.getElementById('btn--a').style.display = 'none';
-          document.getElementById('btn--b').style.display = 'none';
-          document.getElementById('btn--c').style.display = 'none';
-          document.getElementById('btn--d').style.display = 'none';
-             if (correctNumber == 5) {
-                 console.log('Message 1');
-                document.getElementById('closing-message-1').style.display = 'block';
-             } else {
-                console.log('Message 2');
-                document.getElementById('closing-message-2').style.display = 'block';
-             }
-          ;
-          
-        }
+    if (questionCounter == 10) {
+        console.log('Quiz End');
+        document.getElementById('question').style.display = 'none';
+        document.getElementById('next-btn').style.display = 'none';
+        document.getElementById('btn--a').style.display = 'none';
+        document.getElementById('btn--b').style.display = 'none';
+        document.getElementById('btn--c').style.display = 'none';
+        document.getElementById('btn--d').style.display = 'none';
+        document.getElementById('closing-message-1').style.display = 'block';
+        return;
+    }
     generateQuestion(questionCounter);
     clearCorrectColor();
 }

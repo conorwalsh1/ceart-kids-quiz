@@ -129,8 +129,8 @@ This website was built using a Macbook Pro 13".
 
 The W3C Markup Validator, W3C CSS Validator and JSHint were used to validate every page of the project to ensure there were no syntax errors in the project.
 
--   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
--   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
+-   [W3C Markup Validator](https://validator.w3.org/#validate_by_input) 
+-   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
 -   [JSHint](https://https://jshint.com/)
 
 ### Testing User Stories from User Experience (UX) Section
