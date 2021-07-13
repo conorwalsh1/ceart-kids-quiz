@@ -7,7 +7,6 @@ const buttonC = document.getElementById('btn--c');
 const buttonD = document.getElementById('btn--d');
 
 var questionCounter = 0;
-var questionsAnswered = -1;
 
 /**
  * This function will start the quiz by removing the welcome message
@@ -51,7 +50,8 @@ function generateQuestion(questionCounter) {
   * clears the questions and answer buttons and displays a closing message to allow
   * the user know that the quiz has ended. By clicking the 'Next' button, the colour
   * that shows for when an answer is either correct or incorrect will clear whilst
-  * the question is subsequently loaded.
+  * the question is subsequently loaded. Once the quiz ends, the if statement will
+  * check the final score and will display a message relevant to the users score.
   */
 
 function generateNextQuestion() {
@@ -66,7 +66,6 @@ function generateNextQuestion() {
         document.getElementById('btn--c').style.display = 'none';
         document.getElementById('btn--d').style.display = 'none';
 
-        // const correctAnswers = document.getElementById('correct-number');
         const finalScore = parseInt(document.getElementById("correct-number").innerText);
 
         if (finalScore == 10) {
@@ -120,12 +119,24 @@ buttonB.addEventListener('click', correctAnswer);
 buttonC.addEventListener('click', correctAnswer);
 buttonD.addEventListener('click', correctAnswer);
 
+/**
+ * This function will disable all the answer buttons when called. It was created to
+ * be used when the correct answer button has been selected so the user doesn't
+ * increment the score beyond ten which is how may questions are in the quiz
+ */
+
 function disableAnswerButtons() {
     document.getElementById("btn--a").disabled = true;
     document.getElementById("btn--b").disabled = true;
     document.getElementById("btn--c").disabled = true;
     document.getElementById("btn--d").disabled = true;
 }
+
+/**
+ * This function will activate the previously disabled answer buttons when called. 
+ * It was created to be used when the 'Next' button was clicked so the user is able
+ * to answer the next set of questions after they guess the previous one correctly. 
+ */
 
 function activateAnswerButtons() {
     document.getElementById("btn--a").disabled = false;
@@ -169,6 +180,14 @@ function incrementIncorrectScore() {
     let wrongScore = parseInt(document.getElementById("incorrect-number").innerText);
     document.getElementById("incorrect-number").innerText = ++wrongScore;
 }
+
+/**
+ * This variable is used to store all the questions, answers and correct answers.
+ * Initially it stored just questons and answers until I could figure out a way of
+ * toggling through the questions when the next button is clicked. Once I got this
+ * working, I went back and added the 'correct' property so to have something to 
+ * compare the correct answer with when the user clicks an answer button.
+ */
 
 var questionSelection = [
     {
