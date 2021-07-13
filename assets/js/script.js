@@ -71,13 +71,13 @@ function generateNextQuestion() {
         if (finalScore == 10) {
             document.getElementById('closing-message').innerHTML = 'Congratulations on completing the quiz! Fantastic effort! You got every question right! If you would like to play the quiz again, click the little green map of Ireland above to restart the quiz! Slán go fóill!';
         }
-        if (finalScore >= 5) {
+        else if (finalScore >= 5) {
             document.getElementById('closing-message').innerHTML = `Congratulations on completing the quiz! Great effort!<br> You scored ${finalScore}/10!<br> If you would like to try to beat that score, click the little green map of Ireland above to restart the quiz! Slán go fóill!`;
         }
-        if (finalScore < 5) {
+        else if (finalScore >= 1) {
             document.getElementById('closing-message').innerHTML = `Congratulations on completing the quiz! Good attempt, but you can do better!<br> You scored ${finalScore}/10.<br> If you would like to try to beat that score, click the little green map of Ireland above to restart the quiz! Slán go fóill!`;
         }
-        if (finalScore < 1) {
+        else {
             document.getElementById('closing-message').innerHTML = 'Congratulations on completing the quiz! Unfortunately you did not get any questions right, you need more study! If you would like to try again, click the little green map of Ireland above to restart the quiz! Slán go fóill!';
         }
         return;
