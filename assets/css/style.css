@@ -55,7 +55,7 @@ body {
 }
   
 #question {
-    margin: 75px 10px 0px 10px;
+    margin: -100px 10px 0px 10px;
     text-align: center;
     font-size: 75px;
     color: white;
@@ -123,7 +123,7 @@ body {
     background-color: rgb(255, 123, 0);
 }
 
-@media (max-width: 2400px) {
+@media (max-width: 2455px) {
     .logo {
         height: 140px;
         width: 320px;
@@ -211,7 +211,7 @@ body {
 
     #question {
         font-size: 30px;
-        margin-top: 20px;
+        margin-top: -20px;
     }
 
     .btn {
@@ -361,6 +361,7 @@ body {
     }
 
     #question {
+        margin-top: -40px;
         font-size: 20px;
     }
 

@@ -84,11 +84,11 @@ This website was built using a Macbook Pro 13".
 
 -   Welcome message upon loading the quiz informing player how the quiz works.
 
--   Closing message upon completing the quiz congratulating the player, asking them how they scored and directing them to click the green map of Ireland in the logo if they would like to restart.
+-   Closing message upon completing the quiz congratulating the player, telling them how they scored and directing them to click the green map of Ireland in the logo if they would like to restart. There are four different messages that a player could receive, depending on their final score.
 
 -   The green map of Ireland in the logo contains a link so that when it is clicked, it will refresh the page, thereby restarting the quiz.
 
-## Features Left To Add
+## Features I Would Have To Add
 
 -   Different topics of quiz questions, such as sport, history, geography.
 
@@ -128,10 +128,15 @@ This website was built using a Macbook Pro 13".
 ## Testing
 
 The W3C Markup Validator, W3C CSS Validator and JSHint were used to validate every page of the project to ensure there were no syntax errors in the project.
-
+    <h2 align="center">HTML Validator Results</h2>
 -   [W3C Markup Validator](https://validator.w3.org/#validate_by_input) 
+    ![HTML Validator Results](assets/images/ceart-html-test.png)
+    <h2 align="center">CSS Validator Results</h2>
 -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
+    ![CSS Validator Results](assets/images/ceart-css-test.png)
+    <h2 align="center">JavaScript Validator Results</h2>    
 -   [JSHint](https://https://jshint.com/)
+    ![JavaScript Validator Results](assets/images/ceart-js-test.png)
 
 ### Testing User Stories from User Experience (UX) Section
 
@@ -245,9 +250,13 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 -   [Stack Overflow](https://stackoverflow.com/questions/22549032/illegal-use-of-break-statement-javascript) : I was trying to use the "break" statement which I thought would end the loop generating quiz questions but it said "illegal use of break". I then researched online and found that the "return" statement was a better fit as it would break the execution flow of the function and that break was used more for 'for' or 'while' loops.
 
+-   [Stack Overflow](https://stackoverflow.com/questions/3304014/how-to-interpolate-variables-in-strings-in-javascript-without-concatenation) : I used this resource to figure out how to interpolate the final score into the string of if statements that appear in the generateNextQuestion function.
+
 -   [YouTube](https://www.youtube.com/watch?v=MLfAW55_4cY) : I followed the first part of this tutorial to acheive the desired effect of a hover olay for my buttons.
 
 -   [W3Schools](https://www.w3schools.com/cssref/pr_border-style.asp) : I used this site as I was looking to remove a border style that was appearing dotted when I just wanted a simple plain border.
+
+-   [W3Schools](https://www.w3schools.com/jsref/prop_pushbutton_disabled.asp) : I used this site as I was looking for a way to stop the correct answer button from being clicked more than once which was incrementing the score infinitely based on how many time the user clicked the same correct answer.
 
 - My functions incrementScore and incrementIncorrectScore were taken from the 'Love Maths' Code Institute walkthrough, I replaced the Id's with my own.
 
@@ -279,15 +288,3 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 ### Acknowledgements
 
 -   I would like to thank my mentor Maria Hynes for guiding me along the right path throughout our mentoring sessions. There were times I struggled with getting the way I wanted the code to look out of my head and onto the screen, but she gave me great motivation to persevere and I am very grateful for her assistance. I would also like to thank the tutors that helped me along the way.
-
-
-
-
-
-
-
-
-
-
-
-
