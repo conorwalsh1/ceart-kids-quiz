@@ -7,6 +7,7 @@ const buttonC = document.getElementById('btn--c');
 const buttonD = document.getElementById('btn--d');
 
 var questionCounter = 0;
+var questionsAnswered = -1;
 
 /**
  * This function will start the quiz by removing the welcome message
@@ -68,6 +69,7 @@ function generateNextQuestion() {
         return;
     }
     generateQuestion(questionCounter);
+    activateAnswerButtons();
     clearCorrectColor();
 }
 
@@ -89,6 +91,7 @@ function correctAnswer(e) {
     if (userAnswer == theAnswer) {
         console.log('Answer is correct');
         incrementScore();
+        disableAnswerButtons();
         selectedButton.style.backgroundColor = "green";
     } else {
         console.log('Answer is wrong');
@@ -101,6 +104,20 @@ buttonA.addEventListener('click', correctAnswer);
 buttonB.addEventListener('click', correctAnswer);
 buttonC.addEventListener('click', correctAnswer);
 buttonD.addEventListener('click', correctAnswer);
+
+function disableAnswerButtons() {
+    document.getElementById("btn--a").disabled = true;
+    document.getElementById("btn--b").disabled = true;
+    document.getElementById("btn--c").disabled = true;
+    document.getElementById("btn--d").disabled = true;
+}
+
+function activateAnswerButtons() {
+    document.getElementById("btn--a").disabled = false;
+    document.getElementById("btn--b").disabled = false;
+    document.getElementById("btn--c").disabled = false;
+    document.getElementById("btn--d").disabled = false;
+}
 
 /**
  * This function is called within the generateNextQuestion function
